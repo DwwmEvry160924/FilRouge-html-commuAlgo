@@ -1,0 +1,148 @@
+header{
+    border: black solid 2px;
+    background-color: rgba(63, 136, 197, 1);
+    margin-bottom: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.parent{
+    display: grid;
+    grid-template-areas: 
+    "etat etat etat cal cal hour hour"
+    "etat etat etat cal cal hour hour"
+    "etat etat etat projet projet projet projet"
+    "etat etat etat projet projet projet projet"
+    "etat etat etat projet projet projet projet"
+    "even even even totale pourc pourc admin"
+    "even even even totale pourc pourc admin"
+    "even even even done pourc pourc admin"
+    "even even even done pourc pourc admin"
+    "even even even cours pourc pourc admin"
+    "even even even cours pourc pourc admin";
+    gap: 10px;
+}
+
+.div1_etat{
+    grid-area: etat;
+
+    border: black solid 2px;
+    border-radius: 20px;
+    background-color:  rgba(63, 136, 197, 1);
+}
+
+.div2_cal{
+    grid-area: cal;
+
+    border: black solid 2px;
+    border-radius: 20px;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div3_hour{
+    grid-area: hour;
+
+    border: black solid 2px;
+    border-radius: 20px;
+    background-color:  rgba(63, 136, 197, 1);
+}
+
+.div4_projet{
+    grid-area: projet;
+
+    border: black solid 2px;
+    border-radius: 20px;
+    background-color:  rgba(63, 136, 197, 1);
+}
+
+.div5_even{
+    grid-area: even;
+
+    border: black solid 2px;
+    border-radius: 20px;
+    background-color:  rgba(63, 136, 197, 1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.div6_ttot{
+    grid-area: totale;
+
+    border: black solid 2px;
+    background-color:  rgba(29, 47, 111, 1);
+}
+
+.div7_tdone{
+    grid-area: done;
+
+    border: black solid 2px;
+    background-color:  rgba(63, 136, 197, 1);
+}
+
+.div8_tcours{
+    grid-area: cours;
+
+    border: black solid 2px;
+    background-color:  rgba(194, 223, 227, 1);
+}
+
+.div9_tpourc{
+    grid-area: pourc;
+
+    border: black solid 2px;
+    background-color:  rgba(63, 136, 197, 1);
+}
+
+.div10_admin{
+    grid-area: admin;
+
+    border: black solid 2px;
+    border-radius: 20px;
+    background-color:  rgba(29, 47, 111, 1);
+}
+
+
+.tache_container{
+    border: black solid 1px;
+    background-color: rgba(194, 223, 227, 1);
+    min-height: 20vh;
+    padding-left: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.etat{
+    text-align: center;
+}
+
+.projet_container{
+    border: black solid 1px;
+    background-color: rgba(194, 223, 227, 1);
+    min-height: 20vh;
+    padding-left: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projet{
+    text-align: center;
+}
+
+.even{
+    text-align: center;
+}
