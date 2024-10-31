@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title> Page Profil </title>
+</head>
+
+<body>
+    <div class="background">
+        <img src="../logo-removebg-preview.png" class="background_img">
+    </div>
+
+    <div class="layout">
+        <div class="nav_container">
+            <nav>
+                <a href="profile.html">
+                    <i class="bi bi-person-circle" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
+
+                <a href="dashboard.html">
+                    <img src="../logo_bg.png" alt="logo du site">
+                </a>
+
+                <a href="chat.html">
+                    <i class="bi bi-chat-left-fill" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
+
+                <a href="Tache.html">
+                    <i class="bi bi-list-check" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
+
+                <a href="notif.html">
+                    <i class="bi bi-bell" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
+
+                <a href="Connexion.html">
+                    <i class="bi bi-box-arrow-right" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
+            </nav>
+        </div>
+
+        <main>
+            <div class="base">
+                <div class="info">
+                    <button class="bouton" name="info" value="Informations du compte"> Informations du compte</button>
+
+                    <div class="block_info">
+                        <ul>
+                            <li> Nom : </li>
+                            <br>
+                            <li> Prénom : </li>
+                            <br>
+                            <li> Adresse : </li>
+                            <br>
+                            <li> Adresse Mail : </li>
+                            <br>
+                            <li> Date de Naissance : </li>
+                            <br>
+                            <li> Numéro de Téléphone : </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="change_password">
+                    <div class="mdp">
+                        <button class="bouton" name="mdp" value="Modifier le Mot de Passe"> Modifier le Mot de Passe
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <form class="formu" action="get">
+                            <div class="colonne">
+                                <label for="npassword"> Entrez le nouveau Mot de Passe </label>
+                                <input type="password" name="npassword" id="npassword"
+                                    placeholder="Nouveau mot de passe" size="16" required>
+                            </div>
+
+                            <div class="colonne">
+                                <label for="lpassword"> Entrez l'ancien Mot de Passe </label>
+                                <input type="password" name="lpassword" id="lpassword" placeholder="Ancien Mot de Passe"
+                                    size="16" required>
+                            </div>
+                            <div class="colonne">
+                                <label for="v_npassword"> Vérifier le nouveau Mot de Passe </label>
+                                <input type="password" name="v_npassword" id="v_npassword"
+                                    placeholder="Nouveau mot de passe" size="16" required>
+                            </div>
+                            <div class="colonne">
+                                <button name="mdp" id="check" value="submit"> Validé </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="Comm">
+                    <div class="bout">
+                        <button id="H_comment" class="bouton" name="H_comment" value="Historique des Commentaires">
+                            Historique des
+                            Commentaires <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                        <button id="S_comment" class="bouton" name="S_comment" value="Supprimer le Compte"> Supprimer le
+                            Compte
+                        </button>
+                    </div>
+                    <div class="Commentaires">
+                        <h3> Commentaires des 30 derniers jours </h3>
+
+                        <div class="whiteboard">
+                            <div class="com">
+                                <h4> Titre Commentaire 1</h4>
+                                <p> Commentaire 1 </p>
+                            </div>
+                            <div class="com">
+                                <h4> Titre Commentaire 2</h4>
+                                <p> Commentaire 2 </p>
+                            </div>
+                            <div class="com">
+                                <h4> Titre Commentaire 3</h4>
+                                <p> Commentaire 3 </p>
+                            </div>
+                            <div class="com">
+                                <h4> Titre Commentaire 4</h4>
+                                <p> Commentaire 4 </p>
+                            </div>
+                            <div class="com">
+                                <h4> Titre Commentaire 5</h4>
+                                <p> Commentaire 5 </p>
+                            </div>
+                            <div class="com">
+                                <h4> Titre Commentaire 6</h4>
+                                <p> Commentaire 6 </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </main>
+    </div>
+</body>
+
+</html>

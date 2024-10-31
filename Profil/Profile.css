@@ -1,0 +1,196 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background_img{
+    position: absolute;
+    left: 25%;
+    top: 8%;
+    width: 60vw;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.nav_container{
+    grid-area: sidebar;
+    border: black solid 2px;
+    background-color: rgba(63, 136, 197, 1);
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+nav i{
+    color: #1D2F6F;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.nav_container img{
+    width: 50px;
+    height: 50px;
+}
+
+.layout{
+    display: grid;
+    grid-template-areas: "sidebar content content"
+                         "sidebar content2 content2"
+                         "sidebar content3 content3"
+                         "sidebar footer .";
+}
+
+.info{
+    grid-area: content;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+ul{
+    background-color: #3F88C5;
+    color: white;
+    list-style-type: none;
+    margin-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    min-width: 400px;
+    max-width: 400px;
+    height: 150px;
+    border-radius: 20px;
+    border: 2px black solid;
+    font-size: 12px;
+}
+
+
+.change_password{
+    grid-area: content2;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.formu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+    background-color: #3F88C5; 
+    padding: 20px;
+    min-width: 400px;
+    max-width: 400px;
+    color: white;
+    max-height: 180px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.formu label{
+    font-size: 12px;
+}
+
+.bouton i{
+    margin-left: 15px;
+}
+
+#check{
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    background-color: #1D2F6F;
+}
+
+.Comm{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+
+.Commentaires{
+    display: block;
+    justify-content: end;
+    background-color: #3F88C5;
+    border: 2px solid black;
+    border-radius: 20px;
+    min-width: 400px;
+    max-width: 430px;
+    padding: 6px;
+    margin-top: 10px;
+    height: 280px;
+}
+.Commentaires h3{
+    text-align: center;
+}
+
+.whiteboard{
+    display: grid;
+    grid: repeat(2,1fr);
+    overflow: scroll;
+    background-color: white;
+    padding-left: 20px;
+    width: 410px;
+    height: 220px;
+
+}
+
+.com{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 12px;
+    max-height: 50px;
+    padding: 2px;
+    
+}
+
+.bout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#H_comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: start;
+}
+
+#S_comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: end;
+}
+
+.com h4{
+    margin-right: 10px;
+}
+
+.bouton{
+    padding: 40px;
+    text-align: center;
+    height: 80px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    background-color: #1D2F6F;
+    margin-right: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
