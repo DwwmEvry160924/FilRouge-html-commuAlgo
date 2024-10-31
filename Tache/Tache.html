@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tache.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Page Tâche</title>
+</head>
+
+<body>
+
+    <div class="background">
+        <img src="../logo-removebg-preview.png" class="background_img">
+    </div>
+
+    <header>
+        <div class="nav_container">
+            <nav>
+                <a href="profil.html">
+                    <i class="bi bi-person-circle"></i>
+                </a>
+
+                <a href="dashboard.html">
+                    <img src="../logo-removebg-preview.png" alt="logo du site">
+                </a>
+
+                <a href="chat.html">
+                    <i class="bi bi-chat-left-fill" ;></i>
+                </a>
+
+                <a href="tache.html">
+                    <i class="bi bi-list-check"></i>
+                </a>
+
+                <a href="notif.html">
+                    <i class="bi bi-bell"></i>
+                </a>
+
+                <a href="deconnection.html">
+                    <i class="bi bi-box-arrow-right"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="contain">
+            <div class="tete">
+                <div class="Title3">
+                    <div class="Title">
+                        <!-- Attendre JS -->
+                       <h2> <!-- <input type="text" placeholder="Nom de la Tâche" disabled> --> Nom de la Tâche </h2><i class="bi bi-pencil-fill"></i>
+                    </div>
+                    <div class="Title2">
+                        <h4> Nom de la Liste</h4>
+                    </div>
+                </div>
+                <div class="Etat">
+                    <p> Etat de la tâche</p>
+                </div>
+            </div>
+
+
+            <div class="parent">
+                <div class="Desc">
+                    <p>Description de la tâche </p>
+                    <button id="mod" name="Modif" value="Modifier"> Modifier </button>
+                </div>
+
+                <div class="modif">
+                    <!--  Click ouverture input date -->
+                    <button type="button" name="Modif_date" value="Modifier la date de création"> Modifier la date de création
+                    </button>
+                    <button type="button" name="Copy" value="Copier la Tâche"> Copier la Tâche </button>
+                     <!--  Click ouverture input date basé sur la date du jour-->
+                    <button type="button" name="Modif_l_date" value="Modifier la date limite"> Modifier la date limite </button>
+                </div>
+            </div>
+            
+            <div class="comm">
+                <h4> Commentaire </h4>
+                <div class="commz">
+                    <p>Commentaire de Jean Louis</p>
+                    <i class="bi bi-person-circle"></i>
+                </div>
+            </div>
+            <div class="comments">
+                <i class="bi bi-person-circle"></i>
+                <input type="text" placeholder="Entrez votre commentaire">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
