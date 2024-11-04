@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Connexion.css">
-    <title> Connexion </title>
+    <link rel="stylesheet" href="Recup_mot_de_passe.css">
+    <title> Mot de passe oublié </title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             <img class="logo" src="../Logo.png" alt="Logo de l'application">
         </div>
         <div class="connexion-container">
-            <h1> Se connecter </h1>
+            <h1> Mot de passe oublié </h1>
         </div>
     </header>
     <main>
@@ -24,7 +24,6 @@
                 <img src="../logo_bg.png" class="background_img">
             </div>
 
-
             <!-- action="" Manque une partie PHP pour le tri d'information -->
             <form action="" method="post">
                 <div id="mail">
@@ -32,28 +31,16 @@
                     <input type="email" placeholder="Adresse Mail" name="mail" size="30" required>
                 </div>
 
-                <div id="password">
-                    <label for="password"> Mot de Passe * : </label>
-                    <input type="password" name="password" placeholder="A6e!leuis8" minlength="8" maxlength="16"
-                        size="30" required>
-                </div>
-
-                <div id="compte">
-                    <p>Pas de compte ?</p>
-                    <a href=".html" target="_blank">Inscrivez-vous</a>
-                </div>
-
-                <div id="mdp_lost">
-                    <p>Mot de passe oublié ?</p>
-                    <a href="../Recup_mot_de_passe/Recup_mot_de_passe.html" target="_blank">Récuperer mot de passe</a>
-                </div>
-
-
-
+            
                 <div class="valider-container">
-                    <button type="submit" value="Valider"> Valider </button>
+                    <button type="submit" value="Valider"> Envoyer </button>
                 </div>
             </form>
+
+            <div id="compte">
+                <p>Déjà un compte ?</p>
+                <a href="../Connexion/Connexion.html" target="_blank">Connectez-vous</a>
+            </div>
 
             <div id="lien-container">
                 <a href="politiques_confidentialite.html " target="_blank">Politique de confidentialité</a>

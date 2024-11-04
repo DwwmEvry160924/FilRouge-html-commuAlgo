@@ -1,5 +1,8 @@
 
-
+body {
+    margin: 0;
+    padding: 0;
+}
 .nav_container {
     border: black solid 2px;
     background-color: rgba(63, 136, 197, 1);
@@ -37,15 +40,17 @@ i {
 
 .contenu{
     background-color: #3F88C5;
+    box-shadow:  0 8px 16px rgba(0,0,100,0.4);
     border-radius: 20px;
     width: 100vh;
-    margin: auto;
+    margin-left: 15%;
+    margin-top: 2%;
 }
 
 #profil {
     display: flex;
     margin: 0;
-    width: 70vh;
+    width: 70%;
     
 }
 
@@ -59,14 +64,15 @@ i {
 .utilisateur {
     display: inline-block;
     text-align: center;
-    border:white solid 3px;
+    box-shadow:  0 8px 16px rgba(0,0,100,0.4);
     background-color: white;
+    margin-left: 2%;
    padding: 3%;
    width: 50%;
 }
 
 .information {
-    border:white solid 3px;
+    box-shadow:  0 8px 16px rgba(0,0,100,0.4);
     background-color: white;
     width: 80vh;
     height: 450px;
@@ -82,7 +88,7 @@ i {
 .supprimer-container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
+    margin-right: 2%;
     height: 40px;
     padding: 3%;
 }
@@ -90,8 +96,8 @@ i {
 .modifier-container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 2%;
+    margin-top: 2%;
     height: 35px;
 }
 
@@ -103,8 +109,10 @@ input {
 @media screen and (max-width: 425px) {
 
     .contenu {
-        width: 100%;
-        margin: 0;
+        width: 80%;
+        border: 0;
+        margin-top: 5%;
+        margin-left: 10%;
         padding: 1%;
         border-radius: 0;
     }
@@ -117,16 +125,17 @@ input {
         opacity: 0.5;
     }
     .utilisateur {
-        width: 50%;
+        width: 100%;
         margin: 0;
+        margin-left: 10%;
         padding: 1%;
 
     }
     .information {
-        width: 100%;
+        width: 40vh;
         margin: 0;
-        padding: 1%;
-        margin-top: 10px;
+        margin-left: 10%;
+        margin-top: 10%;
     }
 
     .supprimer-container {
@@ -139,11 +148,12 @@ input {
     .modifier-container {
         width: 100%;
         margin: 0;
+        margin-top: 5%;
         padding: 1%;
         border-radius: 0;
     }
 
     .profilList{
-        width: 50%;
+        width: 100%;
     }
 }
