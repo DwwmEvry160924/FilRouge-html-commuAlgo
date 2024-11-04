@@ -14,7 +14,7 @@ body {
 
 
 .nav_container {
-    border: black solid 2px;
+    box-shadow: 0px 3px 5px  darkslategray;
     background-color: rgba(63, 136, 197, 1);
     font-size: 30px;
 }
@@ -36,13 +36,13 @@ nav {
     height: 40px;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     margin-top: 10%;
 }
 
-.contain{
+.contain {
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -50,7 +50,7 @@ main{
     height: 120vh;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid black;
+    box-shadow: 0px 0px 10px 2px darkslategray;
     border-radius: 20px;
     background-color: #C2DFE3;
 }
@@ -61,9 +61,10 @@ main{
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+
 }
 
-.tete{
+.tete {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,7 +86,7 @@ main{
     text-align: center;
 }
 
-.Title3{
+.Title3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,31 +95,42 @@ main{
 
 .Etat {
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: right; 
+    text-align: right;
     background-color: #3F88C5;
+    box-shadow: 4px 4px 4px darkslategray;
     width: 150px;
+}
+
+.Etat i {
+    margin-left: 5%;
 }
 
 .Desc {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
+    box-shadow: 0px 0px 5px 2px darkslategray;
     background-color: #3F88C5;
-    width: 350px;
+    width: 450px;
     min-height: 400px;
     padding: 10px;
     margin: 40px;
     border-radius: 20px;
 }
 
-.Desc p{
+#mod{
+    border: 0;
+    box-shadow: 4px 4px 4px darkslategray;
+}
+
+.Desc p {
     font-size: 16px;
     padding-left: 10px;
 }
 
 .Desc button {
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 10px;
     text-align: center;
     height: 40px;
@@ -127,46 +139,51 @@ main{
     background-color: #1D2F6F;
 }
 
-.modif{
+.modif {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    margin-right: 40px;
 }
 
-.modif button{
+.modif button {
     background-color: #E0FBFC;
-    border: 1px solid black;
+    border: 0;
     border-radius: 20px;
     font-size: 12px;
     width: 150px;
     height: 50px;
-    margin-top: 20px ;
+    margin-top: 20px;
 }
 
-h2,h4{
+.modif button:hover{
+    box-shadow: 3px 4px 3px darkslategray;
+}
+
+h2,
+h4 {
     padding: 0;
     margin: 5px;
 }
 
-.comm{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color:#3F88C5 ;
-  margin-left: 50px;
-  margin-right: 50px;
+.comm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F88C5;
+    box-shadow: 3px 3px 6px  darkslategray;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.commz{
+.commz {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
 }
-.comm p{
+
+.comm p {
     margin-right: 10px;
     background-color: white;
     width: 280px;
@@ -180,15 +197,17 @@ h2,h4{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    
 }
 
-.comments input{
+.comments input {
     width: 300px;
     height: 40px;
-    border: 1px solid black;
+    border: 0;
+    box-shadow: 3px 3px 8px 1px darkslategray;
 }
 
-.comments i{
+.comments i {
     display: flex;
     justify-content: center;
     margin-right: 20px;
@@ -201,27 +220,32 @@ h2,h4{
 }
 
 
-@media screen and (max-width:425px){
+@media screen and (max-width:425px) {
 
-    header{
-        width:100%;
+    .comments {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
         max-height: 60px;
     }
 
-    .Title3{
+    .Title3 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-right: 10px;
     }
 
-    
-    .tete{
+
+    .tete {
         display: flex;
         justify-content: flex-start;
     }
-    
-    .background_img{
+
+    .background_img {
         left: 25%;
         top: 8%;
         width: 60vw;
@@ -229,69 +253,100 @@ h2,h4{
         opacity: 0.5;
     }
 
-    .Desc{
-        margin: 10px;
-        max-width: 75%;
+    .Desc {
+        margin: 3%;
+        max-width: 60%;
     }
 
-    #mod{
+    #mod {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .contain{
-        display: grid;
-        grid: 200px;
+    .contain {
+        display: flex;
         width: 100%;
         height: 50%;
+        padding: 0;
     }
 
 
-    .modif{
+    .modif {
         display: flex;
         flex-direction: column;
         align-items: center;
         align-self: center;
-        margin-right: 30%;
+        margin: 0;
+        width: 50%;
     }
 
-    .modif button{
-
-        max-width: 75%;
+    .modif button {
+        font-size: 12px;
+        width: 100%;
+        max-width: 80%;
     }
 
-    .Etat{
+    .Etat {
+        align-items: center;
         text-align: center;
-        width: 25%;
+        margin-left: 10px;
+        width: 28%;
     }
 
-    .parent{
-        display: grid;
-        grid: 250px 250px;
+    .parent {
+        display: flex;
+        justify-items: center;
         margin-bottom: 20px;
+        width: 100%;
     }
 
-    .comm{
+    .comm {
         display: flex;
         justify-content: center;
         align-self: start;
-        margin-left: 10px;
+        margin-left: 3%;
+        margin-right: 0;
         width: 80%;
         height: 100%;
     }
 
-    .commz{
-        padding: 10px;
+    .commz {
+        padding: 4%;
         width: 90%;
-        margin-top: 40px;
+        margin-top: 1%;
     }
 
-    .comments{
+    .comments {
         width: 80%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        margin-top: 6%;
     }
 
-    .comments i{
+    .comments i {
         margin-right: 6px;
     }
+}
+
+@media screen and (min-width:768px) and (max-width:768px) {
+
+    .contain{
+        height: 160vh;
+    }
+
+
+    .Desc {
+        width: 65vh;
+        height: 30vh;
+    }
+
+
+    .modif {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
 }
