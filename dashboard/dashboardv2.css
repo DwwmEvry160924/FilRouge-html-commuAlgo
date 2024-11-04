@@ -1,13 +1,18 @@
 header{
-    border: black solid 2px;
     background-color: rgba(63, 136, 197, 1);
     margin-bottom: 10px;
+    min-width: 100vw;
 }
 
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -28,8 +33,7 @@ nav{
 .div1_etat{
     grid-area: etat;
 
-    border: rgba(63, 136, 197, 1) 2px;
-    box-shadow: 0px 0px 7px; black;
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
     border-radius: 20px;
     background-color:  rgba(63, 136, 197, 1);
     display: flex;
@@ -69,6 +73,7 @@ nav{
 
     border: rgba(63, 136, 197, 1) 2px;
     border-radius: 20px;
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(63, 136, 197, 1);
     display: flex;
     flex-direction: column;
@@ -81,6 +86,7 @@ nav{
 
     border: rgba(63, 136, 197, 1) 2px;
     border-radius: 20px;
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(63, 136, 197, 1);
 }
 
@@ -104,6 +110,7 @@ nav{
 
     border: rgba(63, 136, 197, 1) 2px;
     border-radius: 20px;
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(63, 136, 197, 1);
     color: azure;
 
@@ -124,6 +131,7 @@ nav{
 
     border: rgba(29, 47, 111, 1) 2px;
     border-top-left-radius: 20px;
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(29, 47, 111, 1);
     color: azure;
     padding: 5%;
@@ -136,6 +144,7 @@ nav{
     grid-area: done;
 
     border: rgba(63, 136, 197, 1) 2px;
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(63, 136, 197, 1);
     color: azure;
     padding: 5%;
@@ -149,6 +158,7 @@ nav{
 
     border: rgba(194, 223, 227, 1) 2px;
     border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(194, 223, 227, 1);
     color: azure;
     padding: 5%;
@@ -163,6 +173,7 @@ nav{
     border: rgba(63, 136, 197, 1) 2px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(63, 136, 197, 1);
     color: azure;
     padding: 5%;
@@ -176,9 +187,69 @@ nav{
 
     border: rgba(29, 47, 111, 1) 2px;
     border-radius: 20px;
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(29, 47, 111, 1);
     color: azure;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width:425px){
+
+    header{
+        width:100%;
+    }
+
+    .parent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div1_etat{
+        width: 80%;
+        margin: 20px;
+    }
+
+    .div4_projet{
+        width: 80%;
+        margin: 20px;
+    }
+
+    .div5_even{
+        width: 80%;
+        margin: 20px;
+    }
+
+
+    .div2_cal{
+        display: none;
+    }
+
+    .div3_hour{
+        display: none;
+    }
+
+    .div6_ttot{
+        display: none;
+    }
+
+    .div7_tdone{
+        display: none;
+    }
+
+    .div8_tcours{
+        display: none;
+    }
+
+    .div9_tpourc{
+        display: none;
+    }
+
+    .div10_admin{
+        display: none;
+    }
+
 }
