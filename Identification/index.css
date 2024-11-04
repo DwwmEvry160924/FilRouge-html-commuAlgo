@@ -34,6 +34,8 @@ h1 {
     text-align: center;
     align-items: center;
     background-color: #3F88C5;
+    box-shadow: 2px 2px 3px darkslategray;
+    text-shadow: 6px 3px darkslategray;
     color: white;
     width: 40%;
     height: 50px;
@@ -51,6 +53,12 @@ form {
 
 }
 
+#formu button:hover{
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 4px 3px darkslategray;
+}
+
 form label {
     color: white;
     margin: 5px;
@@ -62,6 +70,8 @@ input {
     display: flex;
     justify-content: center;
     background-color: #C2DFE3;
+    border: 0;
+    box-shadow: 4px 5px 2px darkslategray;
     min-height: 30px;
     margin: 10px;
     width: 100%;
@@ -70,9 +80,9 @@ input {
 button {
     text-align: center;
     background-color: #1D2F6F;
-    border: 1px solid black;
+    border: 0;
     border-radius: 20px;
-    width: 100px;
+    width: 30%;
     margin-top: 20px;
     margin-left: 40%
 }
@@ -82,6 +92,7 @@ button {
     flex-direction: column;
     margin-left: 12%;
     background-color: #3F88C5;
+    box-shadow: 3px 4px 3px darkslategray;
     padding: 30px;
     border-radius: 20px;
     width: 65%;

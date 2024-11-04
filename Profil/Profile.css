@@ -14,10 +14,8 @@ body{
 }
 
 .nav_container{
-    grid-area: sidebar;
-    border: black solid 2px;
+    box-shadow: 0px 3px 5px  darkslategray;
     background-color: rgba(63, 136, 197, 1);
-    margin-right: 20px;
     font-size: 30px;
 }
 
@@ -27,10 +25,9 @@ nav i{
 
 nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
 }
 
 .nav_container img{
@@ -38,12 +35,55 @@ nav{
     height: 50px;
 }
 
-.layout{
-    display: grid;
-    grid-template-areas: "sidebar content content"
-                         "sidebar content2 content2"
-                         "sidebar content3 content3"
-                         "sidebar footer .";
+#popup{
+    position: fixed;
+	z-index: 99999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+#popup.open{
+	display: block;
+}
+
+#popup .mask{
+    background: black;
+	opacity: 0.8;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#popup .container{
+	position: relative;
+	background: white;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 300px;
+	height: auto;
+	min-height: 50px;
+}
+
+#popup .container .message{
+	padding: 5% 15% 5% 5%;
+}
+
+#popup .container a.close{
+	position: absolute;
+	right: 5%;
+	top:5%;
+	color: #444;
+	font-size: 30px;
+}
+
+#popup .container a.close:hover{		
+	color: black;
 }
 
 .info{
@@ -64,13 +104,12 @@ ul{
     max-width: 400px;
     height: 150px;
     border-radius: 20px;
-    border: 2px black solid;
+    box-shadow: 2px 3px 3px 3px darkslategray;
     font-size: 12px;
 }
 
 
 .change_password{
-    grid-area: content2;
     display: flex;
     margin-bottom: 20px;
 }
@@ -81,11 +120,10 @@ ul{
     grid-gap: 20px; 
     background-color: #3F88C5; 
     padding: 20px;
-    min-width: 400px;
-    max-width: 400px;
+    max-width: 65vh;
     color: white;
     max-height: 180px;
-    border: 2px solid black;
+    box-shadow: 2px 3px 3px 3px darkslategray;
     border-radius: 20px;
 }
 
@@ -113,19 +151,27 @@ ul{
     grid-row-gap: 0px;
 }
 
+.base{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
 
 .Commentaires{
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: end;
     background-color: #3F88C5;
-    border: 2px solid black;
+    box-shadow: 2px 3px 3px 3px darkslategray;
     border-radius: 20px;
-    min-width: 400px;
-    max-width: 430px;
     padding: 6px;
     margin-top: 10px;
     height: 280px;
 }
+
 .Commentaires h3{
     text-align: center;
 }
@@ -136,8 +182,6 @@ ul{
     overflow: scroll;
     background-color: white;
     padding-left: 20px;
-    width: 410px;
-    height: 220px;
 
 }
 
@@ -157,6 +201,7 @@ ul{
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    
 }
 
 #H_comment{
@@ -172,7 +217,7 @@ ul{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    align-self: end;
+    margin-top: 42%;
 }
 
 .com h4{
@@ -187,6 +232,8 @@ ul{
     border-radius: 20px;
     color: white;
     background-color: #1D2F6F;
+    box-shadow: 3px 4px 6px darkslategray;
+    border:0;
     margin-right: 20px;
     margin-top: 10px;
     display: flex;
@@ -194,3 +241,161 @@ ul{
     align-items: center;
     flex-wrap: wrap;
 } 
+
+
+.Comm .bout {
+    display: flex;
+    flex-direction: column; 
+}
+  
+  
+#S_comment {
+    order: 2;
+}
+
+@media screen and (max-width:425px){
+
+    header{
+        width: 100%;
+    }
+    
+    .base{
+        width: 100%;
+    }
+
+    .bouton{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin: 0;
+        width: 80%;
+    }
+
+    #Account{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        max-width: 100%;
+    }
+
+    .block_info{
+        width: 65vh;
+    }
+
+    .change_password{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center ;
+        width: 100%;
+    }
+
+    #C_pass{
+        display: flex;
+        flex-direction: column;
+        border: 0;
+        box-shadow: 2;
+    }
+
+    ul{
+        margin-right: 0;
+        min-width: 30vh;
+
+    }
+
+    ul li{
+        width: 90%;
+    }
+
+    .formu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 55vh;
+        padding-top: 5%;
+        margin-top: 5%;
+        grid-gap: 3%;
+        border: 0;
+    }
+
+
+    .Comm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+
+    .Commentaires{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        width: 100%;
+        border: 0;
+    }
+
+    #H_comment{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .bout{
+        margin: 0;
+        align-self: center;
+    }
+
+    .whiteboard{
+        display: flex;
+        flex-direction: column;
+        margin: 3% 0;
+        padding: 0;
+        width: 100%
+    }
+
+    .colonne{
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .colonne1{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+    }
+
+    .colonne2{
+        display: flex;
+        flex-direction: column;
+        align-self: start;
+    }
+
+    #S_comment {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+        order: 1;
+    }
+}
+
+
+/* Possible soucis pour les tablettes sur les pages. à check */
