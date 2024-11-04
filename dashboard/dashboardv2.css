@@ -36,6 +36,7 @@ nav img{
     box-shadow: 0px 0px 5px DARKSLATEGRAY;
     border-radius: 20px;
     background-color:  rgba(63, 136, 197, 1);
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -43,6 +44,17 @@ nav img{
 
 .etat{
     text-align: center;
+}
+
+.btn_tache{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: auto;
+    padding: 5px;
+    color: azure;
+    background-color: #1D2F6F;
 }
 
 .tache_container{
@@ -88,6 +100,18 @@ nav img{
     border-radius: 20px;
     box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(63, 136, 197, 1);
+    overflow-y: scroll;
+}
+
+.btn_projet{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: auto;
+    padding: 5px;
+    color: azure;
+    background-color: #1D2F6F;
 }
 
 .projet{
@@ -113,12 +137,22 @@ nav img{
     box-shadow: 0px 0px 5px DARKSLATEGRAY;
     background-color:  rgba(63, 136, 197, 1);
     color: azure;
+    overflow-x: scroll;
 
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 5%;
+}
+
+.btn_even{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    padding: 5px;
+    color: azure;
+    background-color: #1D2F6F;
 }
 
 .even{
@@ -223,7 +257,6 @@ nav img{
         margin: 20px;
     }
 
-
     .div2_cal{
         display: none;
     }
@@ -233,19 +266,22 @@ nav img{
     }
 
     .div6_ttot{
-        display: none;
+        width: 80%;
+        border-radius: 0px;
     }
 
     .div7_tdone{
-        display: none;
+        width: 80%;
     }
 
     .div8_tcours{
-        display: none;
+        width: 80%;
+        border-radius: 0px;
     }
 
     .div9_tpourc{
-        display: none;
+        width: 80%;
+        border-radius: 0px;
     }
 
     .div10_admin{
