@@ -16,6 +16,7 @@ main {
 
 
     background-color: #3F88C5;
+    box-shadow: 0px 0px 1px 1px darkslategray;
     border-radius: 20px;
     height: 40%;
     width: 60%;
@@ -47,6 +48,8 @@ table {
 
 }
 
+
+
 td {
 
 
@@ -54,6 +57,15 @@ td {
     height: 5px;
     padding: 8px;
 
+
+
+}
+
+
+
+tr:hover{
+
+    box-shadow: 4px 4px 2px darkslategray;
 
 
 }
@@ -75,14 +87,7 @@ tr {
 
 
 
-li {
 
-
-    display: flex;
-
-
-
-}
 
 .search {
 
@@ -99,6 +104,16 @@ li {
 
 }
 
+
+.search:hover{
+
+border: solid 1px;
+
+
+}
+
+
+
 .search img {
 
     height: 30px;
@@ -108,13 +123,7 @@ li {
 
 }
 
-.search p {
 
-    margin-left: 30%;
-
-
-
-}
 
 .search #clavier {
 
@@ -138,7 +147,7 @@ main {
 
 .nav_container {
 
-    border: black solid 2px;
+    border: black solid 1px;
     background-color: rgba(63, 136, 197, 1);
     height: 60px;
 
@@ -170,17 +179,92 @@ nav i {
     height: 50px;
 }
 
-.arrow{
-display: flex;
-justify-content: end;
-align-items: center;
-color: white;
-background-color: black;
-height: 5%;
-margin-left: 70%;
+.arrow {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: black;
+
+    height: 0;
+    margin-left: 70%;
 
 
 
+
+}
+
+
+.search p {
+
+    margin-left: 34%;
+
+
+
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    color: black;
+    margin-left: 40%;
+    margin-right: 12%;
+    position: relative;
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+
+.toggle-dropdown {
+    display: none;
+}
+
+
+.filter-button {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    right: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    z-index: 1;
+}
+
+
+.toggle-dropdown:checked+.filter-button+.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+
+
+.dropdown-menu li:hover {
+    background-color: #ddd;
+}
+
+.bi-arrow-down-up{
+
+margin-left: 3px;
 
 }
 
@@ -189,40 +273,6 @@ margin-left: 70%;
 
 
 
-
-@media screen and (max-width: 900px) {
-
-    main {
-
-
-        display: flex;
-        justify-content: center;
-
-
-
-    }
-}
-
-
-
-@media screen and (max-width: 900px) {
-
-    tr {
-        display: inline-table;
-        justify-content: center;
-        background-color: #C2DFE3;
-        margin-bottom: 8px;
-        padding: 1%;
-        margin-left: auto;
-
-
-
-
-
-
-    }
-
-}
 
 @media screen and (max-width: 900px) {
 
@@ -261,39 +311,94 @@ margin-left: 70%;
     }
 
 
-.search{
+    .search {
 
-margin-right: 2%;
-margin-left: 2%;
-border: solid 1px;
-
-
-
-}
+        margin-right: 2%;
+        margin-left: 2%;
+        border: solid 1px;
 
 
-.arrow{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    color: white;
-    background-color: black;
-    height: 5%;
-    margin-left: 70%;
-    margin-right: 2%;
-    
-    
-    
-    
+
     }
 
-td{
 
-background-color: #C2DFE3;
-border: solid #3F88C5;
+    .arrow {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: black;
+width: 50%;
+        height: 4%;
+        margin-left: 50%;
+        margin-right: 2%;
+
+
+
+
+    }
+
+    td {
+
+        background-color: #C2DFE3;
+        border: solid 1px white;
+
+
+    }
+
+    main {
+
+
+        display: flex;
+        justify-content: center;
+
+
+
+    }
+
+    tr {
+        display: inline-table;
+        justify-content: center;
+        background-color: #C2DFE3;
+        margin-bottom: 6%;
+        padding: 1%;
+        margin-left: auto;
+
+
+
+
+
+
+    }
+
+    .search p {
+
+        margin-left: 20%;
+
+
+
+    }
+
+    .arrow p {
+
+
+        font-size: 15px;
+
+
+    }
+
+li{
+
+align-items: center;
 
 
 }
 
 
+.dropdown-menu {
+width: 250px;
+position: absolute;
+top: 5vh;
+box-shadow: 1px 1px;
 }
+
+   }
