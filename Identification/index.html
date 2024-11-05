@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title> Identification </title>
 </head>
 
@@ -32,17 +33,16 @@
                 <form action="" method="post">
                     <div id="mail">
                         <label for="mail"> Adresse Mail * : </label>
-                        <input type="email" placeholder="Adresse Mail" name="mail" id="mail" size="30" required>
+                        <input type="email" placeholder="exemple@mail.com" name="mail" id="mail" size="30" required>
                     </div>
                     <div id="password">
-                        <label for="password"> Mot de Passe * : </label>
-                        <!-- <p id="mdp"> ( 8 caractére minimum, 16 maximum, 1 Maj, 1 Min et 1 caractére spécial) </p> -->
+                        <label for="password"> Mot de Passe * :  <i title="8 caractére minimum, 16 maximum, 1 Maj, 1 Min et 1 caractére spécial" class="bi bi-info-circle"></i></label>
                         <input type="password" name="password" id="password" placeholder="A6e!leuis8" minlength="8"
                             maxlength="16" size="30"required>
                     </div>
                     <div id="cpassword">
                         <!-- Vérification des Majuscules, minuscule, chiffre, caractére spécial, impossible en HTML uniquement. -->
-                        <label for="cpassword"> Vérification Mot de Passe * : </label>
+                        <label for="cpassword"> Vérification Mot de Passe * : <i title="8 caractére minimum, 16 maximum, 1 Maj, 1 Min et 1 caractére spécial strictement le même mot de passe" class="bi bi-info-circle"></i> </label>
                         <input type="password" name="cpassword" id="cpassword" placeholder="A6e!leuis8" minlength="8"
                             maxlength="16" size="20" required>
                     </div>
@@ -50,7 +50,7 @@
                 </form>
             </section>
             <div id="lien-container">
-                <p><a href="../politiques_confidentialite.html" target="_blank"> Politique de Confidentialité </a></p>
+                <p><a href="../application/politiques_confidentialite.html" target="_blank"> Politique de Confidentialité </a></p>
             </div>
         </div>
     </main>

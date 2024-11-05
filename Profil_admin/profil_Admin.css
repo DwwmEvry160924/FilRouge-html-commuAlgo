@@ -1,5 +1,8 @@
 
-
+body {
+    margin: 0;
+    padding: 0;
+}
 .nav_container {
     border: black solid 2px;
     background-color: rgba(63, 136, 197, 1);
@@ -35,15 +38,19 @@ i {
     opacity: 0.5;
 }
 
-main{
+.contenu{
     background-color: #3F88C5;
+    box-shadow:  0 8px 16px rgba(0,0,100,0.4);
     border-radius: 20px;
     width: 100vh;
-    margin: auto;
+    margin-left: 15%;
+    margin-top: 2%;
 }
 
 #profil {
-    width: 100vh;
+    display: flex;
+    margin: 0;
+    width: 70%;
     
 }
 
@@ -57,15 +64,15 @@ main{
 .utilisateur {
     display: inline-block;
     text-align: center;
-    border:white solid 3px;
+    box-shadow:  0 8px 16px rgba(0,0,100,0.4);
     background-color: white;
+    margin-left: 2%;
    padding: 3%;
    width: 50%;
-    
 }
 
 .information {
-    border:white solid 3px;
+    box-shadow:  0 8px 16px rgba(0,0,100,0.4);
     background-color: white;
     width: 80vh;
     height: 450px;
@@ -81,7 +88,7 @@ main{
 .supprimer-container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
+    margin-right: 2%;
     height: 40px;
     padding: 3%;
 }
@@ -89,8 +96,8 @@ main{
 .modifier-container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin-right: 2%;
+    margin-top: 2%;
     height: 35px;
 }
 
@@ -99,3 +106,54 @@ input {
     background-color: #1D2F6F;
 }
 
+@media screen and (max-width: 425px) {
+
+    .contenu {
+        width: 80%;
+        border: 0;
+        margin-top: 5%;
+        margin-left: 10%;
+        padding: 1%;
+        border-radius: 0;
+    }
+
+    .background_img {
+        left: 25%;
+        top: 8%;
+        width: 60vw;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    .utilisateur {
+        width: 100%;
+        margin: 0;
+        margin-left: 10%;
+        padding: 1%;
+
+    }
+    .information {
+        width: 40vh;
+        margin: 0;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .supprimer-container {
+        width: 90%;
+        margin: 0;
+        padding: 1%;
+        border-radius: 0;
+    }
+
+    .modifier-container {
+        width: 100%;
+        margin: 0;
+        margin-top: 5%;
+        padding: 1%;
+        border-radius: 0;
+    }
+
+    .profilList{
+        width: 100%;
+    }
+}
