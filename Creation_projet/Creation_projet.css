@@ -62,7 +62,6 @@ i {
 }
 
 .taskList {
-    overflow-x: scroll;
     box-shadow:  0 8px 16px rgba(0,0,100,0.4);
     border-radius: 20px ;
     background-color: #C2DFE3;
@@ -76,40 +75,32 @@ i {
     margin: 30px;
 }
 
-.date p {
-    display: flex;
-    justify-content: space-around;
-    font-size: 15px;
-}
-
-.ajouter-container {
+.date label,input {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.confirmer-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 50px;
-}
 
 button{
     color: white;
     background-color: #1D2F6F;
     border: 2px solid black;
     border-radius: 20px;
+    height: 30px;
 }
 
-.modifier-container {
-    margin-bottom: 30px;
 
+textarea {
+    width: 90%;
+    height: 150px;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
-.supprimer-container {
-    margin-bottom: 30px;
-}
-
-input {
-    margin-bottom: 30px;
+.description label {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
 }
 
 @media screen and (max-width: 425px) {
@@ -137,7 +128,24 @@ input {
         width: 200px;
     }
     input {
-        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 40px;
+        width: 60%;
+        margin-top: 10px;
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 768px) { 
+    
+    input {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 70px;
+        width: 60%;
+        margin-top: 10px;
+
     }
 
 }

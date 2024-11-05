@@ -49,9 +49,12 @@ input {
     width: 150px;
 }
 
+#valider {
+    color: white;
+}
 
 a {
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     text-decoration: none;
