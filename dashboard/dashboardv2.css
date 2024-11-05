@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header{
     background-color: rgba(63, 136, 197, 1);
     margin-bottom: 10px;
@@ -227,6 +232,11 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
 }
 
 @media screen and (max-width:425px){

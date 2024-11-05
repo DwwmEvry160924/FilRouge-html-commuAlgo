@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header{
     background-color: rgba(63, 136, 197, 1);
     margin-bottom: 10px;
