@@ -40,7 +40,10 @@
     <main class="parent">
 
         <section class="div1_etat">
-            <h3 class="etat">Etat des tâches</h3>
+
+            <button class="btn_tache" type="submit" name="submit">Créer une tâche</button>
+            <h3 class="etat">Etat des tâches</h3> 
+            
             <div class="tache_container">
                 <p>Nom de la tâche</p>
                 <p>Nom du projet</p>
@@ -74,10 +77,11 @@
             </form>
         
             <label for="appt"> <b>Heure en direct:</b> </label>
-            <input type="time" id="appt" name="appt" min="09:00" max="18:00"/>
+            <input type="time" id="appt" name="appt"/>
         </section>
 
         <section class="div4_projet">
+            <button class="btn_projet" type="submit" name="submit">Créer un projet</button>
             <h3 class="projet">Tous les projets</h3>
             <div class="projet_container">
                 <p>Nom du projet</p>
@@ -99,25 +103,26 @@
         </section>
 
         <section class="div5_even">
+            <button class="btn_even" type="submit" name="submit">Créer un évènement</button>
             <h3 class="even">Evénement à venir</h3>
             <div>Réunion le...à...</div>
             <div>Description de l'évènement</div>
         </section>
 
         <section class="div6_ttot">
-            <div>Tâches totales: XX</div>
+            Tâches totales: XX
         </section>
 
         <section class="div7_tdone">
-            <div>Tâches terminées: XX</div>
+            Tâches terminées: XX
         </section>
 
         <section class="div8_tcours">
-            <div>Tâches en cours: XX</div>
+            Tâches en cours: XX
         </section>
         
         <section class="div9_tpourc">
-            <div>% tâches terminées</div>
+            % tâches terminées
         </section>
         
         <section class="div10_admin">
@@ -125,7 +130,5 @@
         </section>
 
     </main>
-</div>
 </body>
 </html>
-</body>
