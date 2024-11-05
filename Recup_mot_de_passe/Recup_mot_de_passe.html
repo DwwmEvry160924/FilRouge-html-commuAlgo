@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Recup_mot_de_passe.css">
+    <title> Mot de passe oublié </title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="../Logo.png" alt="Logo de l'application">
+        </div>
+        <div class="connexion-container">
+            <h1> Mot de passe oublié </h1>
+        </div>
+    </header>
+    <main>
+        <div class="contenu">
+            <div class="background">
+                <img src="../logo_bg.png" class="background_img">
+            </div>
+
+            <!-- action="" Manque une partie PHP pour le tri d'information -->
+            <form action="" method="post">
+                <div id="mail">
+                    <label for="mail"> Adresse Mail * : </label>
+                    <input type="email" placeholder="Adresse Mail" name="mail" size="30" required>
+                </div>
+
+            
+                <div class="valider-container">
+                    <button type="submit" value="Valider"> Envoyer </button>
+                </div>
+            </form>
+
+            <div id="compte">
+                <p>Déjà un compte ?</p>
+                <a href="../Connexion/Connexion.html" target="_blank">Connectez-vous</a>
+            </div>
+
+            <div id="lien-container">
+                <a href="politiques_confidentialite.html " target="_blank">Politique de confidentialité</a>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+
+
+
+    </footer>
+
+
+</body>
+
+</html>

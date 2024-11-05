@@ -50,40 +50,48 @@
             <div class="tete">
                 <div class="Title3">
                     <div class="Title">
-                        <!-- Attendre JS -->
+                        <!-- Attendre JS faire sortir l'input au click sur le stylo -->
                        <h2> <!-- <input type="text" placeholder="Nom de la Tâche" disabled> --> Nom de la Tâche </h2><i class="bi bi-pencil-fill"></i>
                     </div>
+                    <input type="text" placeholder="Titre de la tâche">
                     <div class="Title2">
                         <h4> Nom de la Liste</h4>
                     </div>
                 </div>
                 <div class="Etat">
-                    <p> Etat de la tâche</p><i class="bi bi-pencil-fill"></i>
+                    <a href="modal_modif_etat"> Etat de la tâche</a><i class="bi bi-pencil-fill"></i>
                 </div>
             </div>
 
 
             <div class="parent">
                 <div class="Desc">
-                    <p>Description de la tâche </p>
+                    <textarea name="description" id="description" placeholder="Description de la tache">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quas libero corrupti beatae nisi vero veniam itaque quos fugit distinctio earum, dignissimos omnis corporis exercitationem ab accusantium asperiores, 
+                        est hic. Aut!</textarea>
                     <button id="mod" name="Modif" value="Modifier"> Modifier </button>
                 </div>
 
                 <div class="modif">
                     <!--  Click ouverture input date -->
-                    <button type="button" name="Modif_date" value="Modifier la date de création"> Modifier la date de création
-                    </button>
-                    <button type="button" name="Copy" value="Copier la Tâche"> Copier la Tâche </button>
+                    <a href="modal_modif_date_créa"> Modifier la date de création en date de modification</a> 
+                    <a href="copie_tache"> Copier la Tâche </a>
                      <!--  Click ouverture input date basé sur la date du jour-->
-                    <button type="button" name="Modif_l_date" value="Modifier la date limite"> Modifier la date limite </button>
+                    <a href="modif_date_limite"> Modifier la date limite </a>
+                    <a href="modal_archive_tache"> Archiver la Tâche</a> 
                 </div>
             </div>
             
             <div class="comm">
                 <h4> Commentaire </h4>
                 <div class="commz">
-                    <p>Commentaire de Jean Louis</p>
+                    <p>Commentaire de Jean-Louis</p>
                     <i class="bi bi-person-circle"></i>
+                </div>
+                <div class="commz2">
+                    <i class="bi bi-person-circle"></i>
+                    <p>Mon Commentaire</p>
+                    
                 </div>
             </div>
             <div class="comments">
@@ -95,3 +103,7 @@
 </body>
 
 </html>
+
+<!-- Formulaire, ajouter.supprimer. modifier des projets / taches ajouter.supprimer des membres .bouton ajout de projet .date de début date de fin description de projet  -->
+<!-- page projet rajouter une tâche bouton  lié a un formulaire de création pour la page tache -->
+<!-- formulaire pour l'ajout d'événement modal -->
