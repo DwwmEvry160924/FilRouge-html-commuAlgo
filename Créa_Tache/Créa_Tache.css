@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background_img {
+    position: absolute;
+    left: 25%;
+    top: 8%;
+    width: 60vw;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+.nav_container {
+    box-shadow: 0px 3px 5px  darkslategray;
+    background-color: rgba(63, 136, 197, 1);
+    font-size: 30px;
+}
+
+nav i {
+    color: #1D2F6F;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+}
+
+.nav_container img {
+    width: 40px;
+    height: 40px;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    width: 70%;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 2px darkslategray;
+    border-radius: 20px;
+    background-color: #C2DFE3;
+}
+
+.formu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Title{
+    display: flex;
+    margin: 0 140px;
+}
+
+.Title label{
+    margin-right: 5px;
+}
+
+.Title i{
+    margin-right: 10px;
+}
+
+.Title2{
+    display: flex;
+    justify-content: center;
+}
+
+.date{
+    display: flex;
+    margin: 0 140px;
+
+}
+
+.date input{
+    margin-left: 10px;
+    width: 177px;
+}
+
+.descri{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.descri label{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 140px;
+}
+
+.descri textarea{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin:0 auto ;
+}
+
+.Pj{
+    display: flex;
+    align-items: center;
+    margin: 20px 140px;
+    width: 80%;
+}
+
+.Pj label{
+    margin-right: 20px;
+}
+
+.valid{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 40%;
+    color: white;
+    background-color:#1D2F6F;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    padding: 1%;
+}
+
+.valid:hover{
+    box-shadow: 3px 4px 3px darkslategray;
+}
+
+
+
+@media screen and (max-width:425px) {
+    
+    .contain {
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        width: 90%;
+        padding: 2%;
+        box-shadow: 0px 0px 10px 2px darkslategray;
+        border-radius: 20px;
+        background-color: #C2DFE3;
+    }
+
+    .Title{
+        padding: 10px;
+        margin: 0;
+    }
+
+
+    .date{
+        margin: 0;
+    }
+
+    .descri label{
+        margin: 0;
+    }
+
+    .descri textarea{
+        width: 95%;
+        margin: 0;
+    }
+
+    .Pj{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 8px ;
+    }
+
+    .Pj label{
+        width: 100%;
+    }
+
+    .valid{
+        width: 70%;
+        padding: 4%;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:768px) {
+
+    .Title{
+        margin: 0 80px;
+    }
+
+    .date{
+        margin: 0 80px;
+    }
+
+    .descri label{
+        margin: 0 80px;
+    }
+
+    .descri textarea{
+        width: 80%;
+        margin: 0 80px;
+    }
+
+    .Pj{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 90px ;
+    }
+
+    .Pj label{
+        width: 100%;
+    }
+
+    .valid{
+        width: 70%;
+        padding: 2%;
+    }
+}
