@@ -27,7 +27,8 @@ h4 {
     background-color: #C2DFE3;
     border-radius: 20px;
     margin-top: 30px;
-
+    box-shadow: 0px 0px 1px 1px darkslategray;
+    
 
 
 
@@ -36,8 +37,19 @@ h4 {
 }
 
 
+.col:hover{
+
+    box-shadow: 4px 4px 2px darkslategray;
 
 
+}
+
+.col1:hover{
+
+    box-shadow: 4px 4px 2px darkslategray;
+
+
+}
 
 
 
@@ -93,6 +105,7 @@ main {
     justify-content: center;
     margin: 10px;
     gap: 20px;
+    
 }
 
 .background_img {
@@ -117,7 +130,7 @@ p {
 
 .nav_container {
 
-    border: black solid 2px;
+    border: black solid 1px;
     background-color: rgba(63, 136, 197, 1);
     height: 60px;
 

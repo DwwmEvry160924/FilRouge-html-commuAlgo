@@ -1,8 +1,8 @@
-body{
+body {
 
 
-padding: 0;
-margin: 0;
+    padding: 0;
+    margin: 0;
 
 
 
@@ -17,6 +17,7 @@ margin: 0;
 main {
 
     background-color: #3F88C5;
+    box-shadow: 0px 0px 1px 1px darkslategray;
     border-radius: 20px;
     height: 90%;
     width: 64%;
@@ -51,14 +52,40 @@ table {
 
 tr {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    flex-direction: column;
     margin-bottom: 30px;
-    height: 60px;
-    background-color: #D9D9D9;
+    height: 180px;
+    background-color: #C2DFE3;
+    padding-left: 3%;
+    padding-right: 3%;
 
 
 
+}
 
+
+tr:hover {
+
+    box-shadow: 4px 4px 2px darkslategray;
+
+}
+
+
+
+td h4 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+td {
+
+    display: flex;
+    flex-direction: column;
 
 
 }
@@ -68,7 +95,8 @@ tr {
 
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #1D2F6F;
+    color: white;
     margin-left: 102px;
     margin-right: 98px;
     height: 35px;
@@ -78,6 +106,8 @@ tr {
 
 
 }
+
+
 
 .search img {
 
@@ -90,24 +120,18 @@ tr {
 
 .search p {
 
-    margin-left: 30%;
+    margin: auto;
 
 
 
 }
 
-.search #clavier {
 
-    display: flex;
-    justify-content: left;
-
-
-}
 
 
 .nav_container {
 
-    border: black solid 2px;
+    border: black solid 1px;
     background-color: rgba(63, 136, 197, 1);
     height: 60px;
 
@@ -137,4 +161,70 @@ nav i {
 .nav_container img {
     width: 50px;
     height: 50px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .search {
+
+        margin-right: 10%;
+        margin-left: 10%;
+        border: solid 1px;
+    }
+
+    main {
+
+        background-color: white;
+        border-radius: 0px;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin-top: 0px;
+
+
+    }
+
+
+
+    table {
+
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        height: 20%;
+        border-spacing: 30px;
+        padding: 5%;
+        margin: auto;
+        padding-bottom: 5px;
+
+
+    }
+
+
+    tr {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 30px;
+        height: 200px;
+
+
+
+
+
+
+
+    }
+
+    .search p {
+
+        margin: auto;
+
+
+    }
+
+
 }
