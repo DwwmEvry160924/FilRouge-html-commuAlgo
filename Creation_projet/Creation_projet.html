@@ -52,51 +52,26 @@
             <article class="projectColumn">
                 <h4 class="titre">Créer un projet</h4>
                 <div class="taskList">
-                    <div class="date">
-                        <p>Date de début/Date de fin</p>
+                    <div id="projet">
+                        <form action="" method="post">
+                        <label for="text"> Projet : </label>
+                        <input type="text" placeholder="Nom projet" name="Projet" size="30" required>
                     </div>
-                    <form action="" method="post">
-                        <div class="ajouter-container">
-                            <button type="submit" value="Ajouter"> Ajouter des projets </button>
-                        </div>
-                        <div id="projet">
-                            <label for="text"> Projet : </label>
-                            <input type="text" placeholder="Nom projet" name="Projet" size="30" required>
-                        </div>
-                        <div class="confirmer-container">
-                            <button  type="submit" value="Valider"> Confirmer </button>
-                        </div>
-                        <div class="modifier-container">
-                            <button type="submit" value="Modifier"> Modifier des projets </button>
-                        </div>
-                        <div id="projet">
-                            <label for="text"> Projet : </label>
-                            <input type="text" placeholder="Nom projet" name="Projet" size="30" required>
+                    <div id="date">
+                        <label for="date">date de début :</label>
+                        <input type="date" id="date" name="date">
+                        <label for="date">date de fin :</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                        <div class="description">
+                            <label for="Message">Description du projet :</label>
+                            <textarea id="message" name"messaage" placeholder="descriptif du projett">
+                        </textarea>
                         </div>
                         <div class="confirmer-container">
-                            <button  type="submit" value="Valider"> Confirmer </button>
-                        </div>
-                        <div class="supprimer-container">
-                            <button type="submit" value="Modifier"> Supprimer des projets </button>
-                        </div>
-                        <div id="projet">
-                            <label for="text"> Projet : </label>
-                            <input type="text" placeholder="Nom projet" name="Projet" size="30" required>
-                        </div>
-                        <div class="confirmer-container">
-                            <button type="submit" value="Valider"> Confirmer </button>
+                            <button type="submit" value="Valider"> Enregistrer le projet </button>
                         </div>
                     </form>
-                    <div class="description">
-                        <h4>Description du projet :</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Repellendus aperiam voluptas tempora praesentium unde?
-                            Dignissimos impedit commodi,
-                            deserunt in quidem veniam adipisci nesciunt porro quas voluptatem maxime dolores repellendus
-                            aspernatur!
-                        </p>
-                    </div>
                 </div>
             </article>
         </section>
