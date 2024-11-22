@@ -135,12 +135,15 @@ i{
     }
 
     form input {
+
         margin-top: 1%;
     }
 
     form label {
         margin-bottom: 3%;
+        text-align: center;
         padding: 0;
+        width: 100%;
     }
 
     .formu {
@@ -149,10 +152,11 @@ i{
     }
 
     .contenu {
-        margin: 0;
+        margin-left: 5%;
         padding-left: 0;
         padding-top: 2%;
-        width: 98%;
+        margin-bottom: 20px;
+        width: 80%;
         border-radius: 0;
     }
 
@@ -162,15 +166,19 @@ i{
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .background_img {
-        left: 25%;
-        top: 50%;
-        width: 80%;
+        position: absolute;
+        object-fit: fill;
         z-index: -1;
-        opacity: 0.5;
+        opacity: 0.8;
+    }
+
+    
+    .inscription-container{
+        margin: 0;
     }
 
     button {
@@ -179,6 +187,7 @@ i{
         border: 1px solid black;
         border-radius: 20px;
         width: 100px;
+        margin-left: 35%;
     }
 
     button a{
