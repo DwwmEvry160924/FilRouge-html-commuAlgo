@@ -1,0 +1,189 @@
+.background_img {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: end;
+}
+
+.inscription-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #3F88C5;
+    box-shadow: 2px 2px 3px darkslategray;
+    text-shadow: 6px 3px darkslategray;
+    color: white;
+    width: 40%;
+    height: 50px;
+}
+
+form {
+    width: 100%;
+}
+
+#formu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 2%;
+
+}
+
+#formu button:hover{
+    display: flex;
+    justify-content: center;
+    box-shadow: 3px 4px 3px darkslategray;
+}
+
+form label {
+    color: white;
+    margin: 5px;
+    height: 30px;
+    width: 40%;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    background-color: #C2DFE3;
+    border: 0;
+    box-shadow: 4px 5px 2px darkslategray;
+    min-height: 30px;
+    margin: 10px;
+    width: 100%;
+}
+
+button {
+    text-align: center;
+    background-color: #1D2F6F;
+    border: 0;
+    border-radius: 20px;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 40%
+}
+
+.contenu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+    background-color: #3F88C5;
+    box-shadow: 3px 4px 3px darkslategray;
+    padding: 30px;
+    border-radius: 20px;
+    width: 65%;
+}
+
+#lien-container {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+
+form a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+#mail,
+#password,
+#cpassword {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+i{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:425px) {
+
+    h1 {
+        width: 80%;
+    }
+
+    form input {
+        margin-top: 1%;
+    }
+
+    form label {
+        margin-bottom: 3%;
+        padding: 0;
+    }
+
+    .formu {
+        padding: 0;
+        width: 100%;
+    }
+
+    .contenu {
+        margin: 0;
+        padding-left: 0;
+        padding-top: 2%;
+        width: 98%;
+        border-radius: 0;
+    }
+
+    #mail,
+    #password,
+    #cpassword {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .background_img {
+        left: 25%;
+        top: 50%;
+        width: 80%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+
+    button {
+
+        background-color: #1D2F6F;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 100px;
+    }
+
+    button a{
+        padding: 0;
+        text-align: center;
+    }
+
+}

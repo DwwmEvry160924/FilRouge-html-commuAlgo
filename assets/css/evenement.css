@@ -1,0 +1,64 @@
+<<<<<<< HEAD:evenement/evenement.css
+body {
+    margin: 0;
+    padding: 0;
+=======
+body{
+    padding: 0;
+    margin: 0;
+>>>>>>> ThomasDev:assets/css/evenement.css
+}
+
+header{
+    background-color: rgba(63, 136, 197, 1);
+    margin-bottom: 10px;
+    min-width: 100vw;
+}
+
+.nav_container {
+    box-shadow: 0px 3px 5px  darkslategray;
+    background-color: rgba(63, 136, 197, 1);
+    font-size: 30px;
+}
+
+nav i {
+    color: #1D2F6F;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+}
+
+.nav_container img{
+    width: 40px;
+    height: 40px;
+}
+
+form{
+    box-shadow: 0px 0px 5px DARKSLATEGRAY;
+    width: 50%;
+    margin: 203px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(194, 223, 227, 1);
+}
+
+button{
+    padding: 5px;
+    color: azure;
+    background-color: #1D2F6F;
+}
+
+@media screen and (max-width:425px){
+
+    form{
+        padding: 40px;
+    }
+}
