@@ -1,0 +1,348 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.background_img {
+    position: absolute;
+    object-fit: fill;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.nav_container{
+    box-shadow: 0px 3px 5px  darkslategray;
+    background-color: rgba(63, 136, 197, 1);
+    font-size: 30px;
+}
+
+nav i{
+    color: #1D2F6F;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav_container img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.info{
+    grid-area: content;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+ul{
+    background-color: #3F88C5;
+    color: white;
+    list-style-type: none;
+    padding-bottom: 20px;
+    padding-top: 5px;   
+    width: 75vh;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px 3px darkslategray;
+    font-size: 12px;
+}
+
+
+.change_password{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.formu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+    background-color: #3F88C5; 
+    padding: 20px;
+    width: 75vh;
+    color: white;
+    box-shadow: 2px 3px 3px 3px darkslategray;
+    border-radius: 20px;
+}
+
+.formu label{
+    font-size: 12px;
+}
+
+.bouton i{
+    margin-left: 15px;
+}
+
+#check{
+    width: 100px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    background-color: #1D2F6F;
+}
+
+.Comm{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.base{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.Commentaires{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: #3F88C5;
+    box-shadow: 2px 3px 3px 3px darkslategray;
+    border-radius: 20px;
+    padding: 6px;
+    margin-top: 10px;
+    height: 280px;
+}
+
+.Commentaires h3{
+    text-align: center;
+}
+
+.whiteboard{
+    display: grid;
+    grid: repeat(2,1fr);
+    overflow-y: scroll;
+    background-color: white;
+    padding-left: 20px;
+
+}
+
+.com{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 12px;
+    max-height: 50px;
+    padding: 2px;
+    
+}
+
+.bout{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+}
+
+#H_comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: start;
+}
+
+#S_comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 42%;
+}
+
+.com h4{
+    margin-right: 10px;
+}
+
+.bouton{
+    padding: 40px;
+    text-align: center;
+    height: 80px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    background-color: #1D2F6F;
+    box-shadow: 3px 4px 6px darkslategray;
+    border:0;
+    margin-right: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+
+
+.Comm .bout {
+    display: flex;
+    flex-direction: column; 
+}
+  
+@media screen and (max-width:425px){
+
+    header{
+        width: 100%;
+    }
+    
+    .base{
+        width: 100%;
+    }
+
+    .bouton{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin: 0;
+        width: 80%;
+    }
+
+    #Account{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_container{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        max-width: 100%;
+    }
+
+    .block_info ul{
+        width: 80%;
+    }
+
+    .change_password{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center ;
+        width: 100%;
+    }
+
+    #C_pass{
+        display: flex;
+        flex-direction: column;
+        border: 0;
+        box-shadow: 2;
+    }
+
+    ul{
+        margin-right: 0;
+        min-width: 55vh;
+    }
+
+    ul li{
+        width: 80%;
+    }
+
+    .formu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        vertical-align: middle;
+        width: 55vh;
+        padding-top: 5%;
+        margin-top: 5%;
+        margin-left: 0;
+        border: 0;
+    }
+
+
+    .Comm{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+
+    .Commentaires{
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        width: 100%;
+        border: 0;
+    }
+
+    #H_comment{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .bout{
+        margin: 0;
+        align-self: center;
+    }
+
+    .whiteboard{
+        display: flex;
+        flex-direction: column;
+        margin: 3% 0;
+        padding: 0;
+        width: 100%
+    }
+
+    .colonne{
+        margin-bottom: 6%;
+        margin-top: 3%;
+    }
+
+    .colonne1{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .colonne2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #S_comment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 10%;
+
+    }
+
+    #Account, #H_comment{
+
+        display: none;
+    }
+
+
+}
+
+
+/* Possible soucis pour les tablettes sur les pages. à check */
