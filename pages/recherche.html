@@ -13,149 +13,89 @@
 
 <body>
     <div class="background">
-      
-
-    <aside>
-
-        <div class="nav_container">
-            <nav>
-                <a href="../pages/Profile.html">
-                    <i class="bi bi-person-circle" style="color: rgba(29, 47, 111, 1)"></i>
-                </a>
-
-                <a href="../pages/dashboardv2.html">
-                    <img src="../assets/image/logo-removebg-preview.png" alt="logo du site">
-                </a>
-
-                <a href="../pages/chat.html">
-                    <i class="bi bi-chat-left-fill" style="color: rgba(29, 47, 111, 1)"></i>
-                </a>
-
-                <a href="../pages/Projet.html">
-                    <i class="bi bi-list-check" style="color: rgba(29, 47, 111, 1)"></i>
-                </a>
-
-                <a href="../pages/notif.html">
-                    <i class="bi bi-bell" style="color: rgba(29, 47, 111, 1)"></i>
-                </a>
-
-                <a href="../pages/Connexion.html">
-                    <i class="bi bi-box-arrow-right" style="color: rgba(29, 47, 111, 1)"></i>
-                </a>
-            </nav>
-        </div>
 
 
-    </aside>
+        <aside>
+
+            <div class="nav_container">
+                <nav>
+                    <a href="../pages/Profile.html">
+                        <i class="bi bi-person-circle" style="color: rgba(29, 47, 111, 1)"></i>
+                    </a>
+
+                    <a href="../pages/dashboardv2.html">
+                        <img src="../assets/image/logo-removebg-preview.png" alt="logo du site">
+                    </a>
+
+                    <a href="../pages/chat.html">
+                        <i class="bi bi-chat-left-fill" style="color: rgba(29, 47, 111, 1)"></i>
+                    </a>
+
+                    <a href="../pages/Projet.html">
+                        <i class="bi bi-list-check" style="color: rgba(29, 47, 111, 1)"></i>
+                    </a>
+
+                    <a href="../pages/notif.html">
+                        <i class="bi bi-bell" style="color: rgba(29, 47, 111, 1)"></i>
+                    </a>
+
+                    <a href="../pages/Connexion.html">
+                        <i class="bi bi-box-arrow-right" style="color: rgba(29, 47, 111, 1)"></i>
+                    </a>
+                </nav>
+            </div>
 
 
-    <main>
+        </aside>
 
 
-        <div class="tab">
-            <div class="search">
+        <main>
 
-                <img id="clavier" src="../assets/image/clavier.png" alt="clavier">
 
-                <p>Recherche effectué</p>
+            <div class="tab">
+                <div class="search">
+
+
+                    <input type="search" id="searchInput" placeholder="Recherche effectué">
+
+
+
+                </div>
+
+                <div class="arrow">
+
+                    <input type="checkbox" id="toggle-dropdown" class="toggle-dropdown">
+
+                    <label for="toggle-dropdown" class="filter-button">
+                        Filtrer Par <i class="bi bi-arrow-down"></i>
+                    </label>
+
+                    <ul class="dropdown-menu">
+                        <li>Classement A-Z <i class="bi bi-arrow-down-up"></i></li>
+                        <li>Classement par État <i class="bi bi-arrow-down-up"></i></li>
+                        <li>Classement par Date <i class="bi bi-arrow-down-up"></i></li>
+                    </ul>
+                </div>
+
+
+
+                <table>
+                    <tbody id="rows">
+                        
+
+                    </tbody>
+
+
+
+                </table>
+
 
 
             </div>
 
-            <div class="arrow">
-                <!-- Checkbox pour contrôler le menu -->
-                <input type="checkbox" id="toggle-dropdown" class="toggle-dropdown">
-                <!-- Label comme bouton pour ouvrir le menu -->
-                <label for="toggle-dropdown" class="filter-button">
-                    Filtrer Par <i class="bi bi-arrow-down"></i>
-                </label>
-                <!-- Menu déroulant -->
-                <ul class="dropdown-menu">
-                    <li>Classement A-Z <i class="bi bi-arrow-down-up"></i></li> 
-                    <li>Classement par État <i class="bi bi-arrow-down-up"></i></li> 
-                    <li>Classement par Date <i class="bi bi-arrow-down-up"></i></li> 
-                </ul>
-            </div>
 
 
-
-            <table>
-                <tbody>
-                    <tr>
-
-                        <td>Couleur tâche</td> 
-                        <td>Nom de la tâche</td>
-                        <td>Nom du projet</td>
-
-
-
-                    </tr>
-
-
-
-                    <tr>
-
-                        <td>Couleur tâche</td>
-                        <td>Nom de la tâche</td>
-                        <td>Nom du projet</td>
-
-
-
-                    </tr>
-
-                    <tr>
-
-                        <td>Couleur tâche</td>
-                        <td>Nom de la tâche</td>
-                        <td>Nom du projet</td>
-
-
-
-                    </tr>
-
-                    <tr>
-
-                        <td>Couleur tâche</td>
-                        <td>Nom de la tâche</td>
-                        <td>Nom du projet</td>
-
-
-
-                    </tr>
-
-                    <tr>
-
-                        <td>Couleur tâche</td>
-                        <td>Nom de la tâche</td>
-                        <td>Nom du projet</td>
-
-
-
-                    </tr>
-
-                    <tr>
-
-                        <td>Couleur tâche</td>
-                        <td>Nom de la tâche</td>
-                        <td>Nom du projet</td>
-
-
-
-                    </tr>
-
-                </tbody>
-
-
-
-            </table>
-
-
-
-        </div>
-
-
-
-        </div>
+    </div>
 
 
 
@@ -166,13 +106,13 @@
 
 
 
-</div>
+    </div>
 
 
 
 
 
-
+    <script src="/assets/js/recherche.js"></script>
 
 </body>
 

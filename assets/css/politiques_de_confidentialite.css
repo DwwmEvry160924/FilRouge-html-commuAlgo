@@ -245,3 +245,19 @@ nav i {
 
 
 }
+
+#scrollTopButton{ 
+position: fixed; 
+bottom: 30px; 
+right: 30px; 
+padding: 10px 15px; 
+border: none; 
+background: #3F88C5; 
+color: white; 
+border-radius: 50%;
+
+
+
+
+
+}

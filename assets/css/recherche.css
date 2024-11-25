@@ -64,6 +64,8 @@ table {
 
 
 
+
+
 td {
 
 
@@ -90,7 +92,7 @@ tr {
     background-color: #C2DFE3;
     margin-bottom: 8px;
     padding: 5px;
-    margin-left: 10px;
+    margin-left: 15%;
     border-radius: 20px;
 
 
@@ -101,53 +103,32 @@ tr {
 }
 
 
+.tab{
 
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+
+}
 
 
 .search {
 
     display: flex;
     align-items: center;
-    background-color: white;
-    margin-left: 102px;
-    margin-right: 98px;
-    height: 35px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     padding: 0;
-    border-radius: 15px;
-
-
-}
-
-
-.search:hover{
-
-border: solid 1px;
+    width: 75%;
+    
 
 
 }
 
 
 
-.search img {
 
-    height: 30px;
-    width: 30px;
-    margin-left: 3%;
-
-
-}
-
-
-
-.search #clavier {
-
-    display: flex;
-    justify-content: left;
-
-
-}
 
 main {
 
@@ -200,7 +181,6 @@ nav i {
     justify-content: end;
     align-items: center;
     color: black;
-
     height: 0;
     margin-left: 70%;
 
@@ -210,9 +190,17 @@ nav i {
 }
 
 
-.search p {
+.search input {
 
-    margin-left: 34%;
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    
+
 
 
 
@@ -335,15 +323,6 @@ display: none;
     }
 
 
-    .search {
-
-        margin-right: 2%;
-        margin-left: 2%;
-        border: solid 1px;
-
-
-
-    }
 
 
     .arrow {
@@ -378,6 +357,9 @@ width: 50%;
 
 
     }
+   
+
+
 
     tr {
         display: inline-table;
@@ -385,7 +367,7 @@ width: 50%;
         background-color: #C2DFE3;
         margin-bottom: 6%;
         padding: 1%;
-        margin-left: auto;
+        margin-left: 13%;
 
 
 
@@ -394,7 +376,7 @@ width: 50%;
 
     }
 
-    .search p {
+    .search{
 
         margin-left: 20%;
 
@@ -425,4 +407,39 @@ top: 5vh;
 box-shadow: 1px 1px;
 }
 
-   }
+   
+   .search input {
+
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 18%;
+    
+    
+
+
+
+
+}}
+
+.finished{
+
+background-color: green;
+
+
+}
+.progress{
+
+background-color: orange;
+
+
+}
+.todo{
+
+background-color: red;
+
+
+}
