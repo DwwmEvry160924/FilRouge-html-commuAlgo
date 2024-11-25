@@ -78,13 +78,15 @@ input {
 }
 
 button {
+    display: flex;
+    justify-content: center;
     text-align: center;
     background-color: #1D2F6F;
     border: 0;
     border-radius: 20px;
     width: 30%;
     margin-top: 20px;
-    margin-left: 40%
+    margin-left: 35%;
 }
 
 .contenu {
@@ -102,6 +104,11 @@ button {
     display: flex;
     justify-content: flex-start;
     font-size: 12px;
+}
+
+#account{
+    display: flex;
+    justify-content: center;
 }
 
 form a {
