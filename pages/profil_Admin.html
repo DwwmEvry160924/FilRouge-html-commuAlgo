@@ -16,35 +16,35 @@
         <img src="../assets/image/background__image.jpg" class="background_img">
     </div>
 
-        <header>
-            <div class="nav_container">
-                <nav>
-                    <a href="../pages/Profile.html">
-                        <i class="bi bi-person-circle" style="color: rgba(29, 47, 111, 1)"></i>
-                    </a>
+    <header>
+        <div class="nav_container">
+            <nav>
+                <a href="../pages/Profile.html">
+                    <i class="bi bi-person-circle" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
 
-                    <a href="../pages/dashboardv2.html">
-                        <img src="../assets/image/logo_bg.png" alt="logo du site">
-                    </a>
+                <a href="../pages/dashboardv2.html">
+                    <img src="../assets/image/logo_bg.png" alt="logo du site">
+                </a>
 
-                    <a href="../pages/chat.html">
-                        <i class="bi bi-chat-left-fill" style="color: rgba(29, 47, 111, 1)"></i>
-                    </a>
+                <a href="../pages/chat.html">
+                    <i class="bi bi-chat-left-fill" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
 
-                    <a href="../pages/Projet.html">
-                        <i class="bi bi-list-check" style="color: rgba(29, 47, 111, 1)"></i>
-                    </a>
+                <a href="../pages/Projet.html">
+                    <i class="bi bi-list-check" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
 
-                    <a href="../pages/notif.html">
-                        <i class="bi bi-bell" style="color: rgba(29, 47, 111, 1)"></i>
-                    </a>
+                <a href="../pages/notif.html">
+                    <i class="bi bi-bell" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
 
-                    <a href="../pages/Connexion.html">
-                        <i class="bi bi-box-arrow-right" style="color: rgba(29, 47, 111, 1)"></i>
-                    </a>
-                </nav>
-            </div>
-        </header>
+                <a href="../pages/Connexion.html">
+                    <i class="bi bi-box-arrow-right" style="color: rgba(29, 47, 111, 1)"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
 
     <main>
         <div class="contenu">
@@ -53,7 +53,7 @@
                     <h4 class="utilisateur">Nom utilisateur</h4>
                     <div class="information">
                         <div class="modifier-container">
-                            <input type="submit" name="submit" value="modifier le compte">
+                            <input type="submit" name="submit" value="modifier le compte" id="S_edit">
                         </div>
                         <p>Nom</p>
                         <p>Prenom</p>
@@ -71,7 +71,51 @@
             </section>
 
             <div class="supprimer-container">
-                <input type="submit" name="submit" value="Supprimer le compte">
+                <input type="submit" name="submit" value="Supprimer le compte" id="S_delete">
+            </div>
+        </div>
+
+        <div id="modal_delete" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Êtes-vous sûr de vouloir supprimer votre compte ?</h2>
+                <p>Cette action est irréversible.</p>
+                <div class="modal-buttons">
+                    <button id="confirm_delete">Confirmer</button>
+                    <button id="cancel_delete">Annuler</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_edit" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Modifier votre compte</h2>
+                <p>Voici le formulaire pour modifier vos informations :</p>
+                <form>
+                    <label for="new_name">Nom :</label>
+                    <input type="text" id="new_name" name="new_name" placeholder="Entrez un nom"><br>
+                    <br>
+                    <label for="new_firstName">Prenom :</label>
+                    <input type="text" id="new_firstName" name="new_firstName" placeholder="Entrez un prénom"><br>
+                    <br>
+                    <label for="new_adress">Adresse :</label>
+                    <input type="text" id="new_adress" name="new_adress" placeholder="Entrez une adresse"><br>
+                    <br>
+                    <label for="new_email">Adresse Mail :</label>
+                    <input type="email" id="new_email" name="new_email" placeholder="Entrez un nouvel email"><br>
+                    <br>
+                    <label for="new_birth">Date de Naissance :</label>
+                    <input type="number" id="new_birth" name="new_birth" placeholder="Entrez votre date de naissance"><br>
+                    <br>
+                    <label for="new_number">Numéro de téléphone :</label>
+                    <input type="number" id="new_number" name="new_number" placeholder="Entrez votre numéro de téléphone"><br>
+                    <br>
+                </form>
+                <div class="modal-buttons">
+                    <button id="confirm_edit">Confirmer les modifications</button>
+                    <button id="cancel_edit">Annuler</button>
+                </div>
             </div>
         </div>
     </main>
@@ -81,6 +125,10 @@
 
     </footer>
 
+
+
+
+    <script src="../assets/js/profil_Admin.js"></script>
 </body>
 
 
