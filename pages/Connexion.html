@@ -28,38 +28,39 @@
         <div class="contenu">
             
 
-            <!-- action="" Manque une partie PHP pour le tri d'information -->
             <form action="" method="post">
                 <div id="mail">
-                <label for="mail"> Adresse Mail * : </label>
-                <input type="email" placeholder="Adresse Mail" name="mail" size="30" required>
+                <label for="mail" id="email"> Adresse Mail * : </label>
+                <input type="email"id="EMAIL" placeholder="Adresse Mail" name="mail" size="30">
+                <div id="emailError"></div>
             </div>
             
                 <div id="password">
-                <label for="password"> Mot de Passe * : </label>
-                <input type="password" name="password" placeholder="A6e!leuis8" minlength="8" maxlength="16"
-                    size="30" required>
+                <label for="password" id="mdp"> Mot de Passe * : </label>
+                <input type="password" id="MDP" name="password" placeholder="A6e!leuis8" 
+                    size="30">
+                    <div id="passwordError"></div>
                 </div>
                 
                 <div id="compte">
                 <p>Pas de compte ?</p>
-                <a href="../pages/index.html" target="_blank">Inscrivez-vous</a> 
+                <a href="../pages/index.html" target="_blank" id="inscription">Inscrivez-vous</a> 
             </div>
 
                 <div id="mdp_lost">
                 <p>Mot de passe oublié ?</p>
-                <a href="../pages/Recup_mot_de_passe.html" target="_blank">Récuperer mot de passe</a> 
+                <a href="../pages/Recup_mot_de_passe.html" target="_blank" id="oubli">Récuperer mot de passe</a> 
                 </div>
 
 
 
                 <div class="valider-container">
-                   <a id="valider" href="../pages/dashboardv2.html"><button type="submit" value="Valider"> Valider </a></button> 
+                   <button type="submit" value="Valider"> Valider</button> 
                 </div>
             </form>
 
             <div id="lien-container">
-            <a href="../pages/politiques_confidentialite.html" target="_blank">Politique de confidentialité</a>
+            <a href="../pages/politiques_confidentialite.html" target="_blank" id="lien">Politique de confidentialité</a>
         </div>
     </div>
     </main>
@@ -72,6 +73,8 @@
     </footer>
 
 
+
+    <script src="../assets/js/connexion.js"></script>
 </body>
 
 </html>

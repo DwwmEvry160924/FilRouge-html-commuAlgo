@@ -48,6 +48,10 @@ h1 {
     justify-content: center;
 
 }
+#lien:hover,
+#connexion:hover {
+    text-decoration: underline;
+}
 
 label {
     display: flex;
@@ -97,6 +101,16 @@ button {
     border-radius: 20px;
     width: 20vh;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .contenu {
@@ -116,6 +130,7 @@ button {
 
 #mail { 
     display: flex;
+    flex-direction: column;
     justify-content: left;
     align-items: center;
     font-size: 13px;
@@ -130,6 +145,32 @@ button {
 
 }
 
+#emailError {
+    color: red;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#confirmation {
+    color: green; 
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
+.modal {
+    display: none; /* La modale est cachée par défaut */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Fond semi-transparent */
+  }
+
+
 @media screen and (max-width: 425px) {
     .contenu { 
         width: 100%;
@@ -139,11 +180,11 @@ button {
     }
 
     .background_img {
-        left: 25%;
-        top: 8%;
-        width: 60vw;
+        position: absolute;
+        height: 100vh;
+        width: 102vw;
         z-index: -1;
-        opacity: 0.5;
+        opacity: 0.8;
     }
     h1 {
         width: 80%;
