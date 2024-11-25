@@ -51,7 +51,9 @@
                 <button id="Account" class="bouton" name="info" value="Informations du compte"> Informations du compte </button>
 
                 <div class="block_info">
+                    
                     <ul>
+                        <h4 id="Account_Info"> Informations du compte </h4>
                         <li> Nom : </li>
                         <br>
                         <li> Prénom : </li>
@@ -69,8 +71,9 @@
             <div class="change_password">
                 <button  id="C_pass" class="bouton" name="mdp" value="Modifier le Mot de Passe"> Modifier le Mot de Passe <i
                         class="bi bi-arrow-right"></i></button>
-                <div>
+                <div class="form">
                     <form class="formu" action="get">
+                        <h4 id="Pass_change"> Modifier le Mot de Passe </h4>
                         <div class="colonne1">
                             <label for="npassword"> Entrez le nouveau Mot de Passe </label>
                             <input type="password" name="npassword" id="npassword" placeholder="Nouveau mot de passe"
@@ -96,17 +99,14 @@
             <div class="Comm">
                 <div class="bout">
                     <button id="H_comment" class="bouton" name="H_comment" value="Historique des Commentaires">
-                        Historique des
-                        Commentaires <i class="bi bi-arrow-right"></i>
+                        Historique des Commentaires <i class="bi bi-arrow-right"></i>
                     </button>
+                    
 
-                    <button id="S_comment" class="bouton" name="S_comment" value="Supprimer le Compte"> Supprimer le
-                        Compte
-                    </button>
+                    <button type="button" id="S_comment" class="bouton" name="S_comment" value="Supprimer le Compte">Supprimer le Compte</button>
                 </div>
                 <div class="Commentaires">
                     <h3> Commentaires des 30 derniers jours </h3>
-
                     <div class="whiteboard">
                         <div class="com">
                             <h4> Titre Commentaire 1</h4>
@@ -134,7 +134,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
     </main>
 </body>
