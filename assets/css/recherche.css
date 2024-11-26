@@ -2,11 +2,11 @@
 .background {
     
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 100vh;
     background-image: url("../image/background__image.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -15,56 +15,30 @@ body {
     margin: 0;
     padding: 0;
 
-
 }
-
-
 
 
 main {
 
-
-
-
-
     background-color: #3F88C5;
     box-shadow: 0px 0px 1px 1px darkslategray;
     border-radius: 20px;
-    height: 40%;
-    width: 60%;
+    width: 50%;
     margin: 50px auto;
-  
-
-
-
-
 }
-
-
-
-
-
 
 table {
 
-
-
     border-spacing: 30px;
-    margin: 10px 13%;
+    width: 80%;
+    min-height: 200px;
+    margin: 10px 8%;
     padding: 3%;
-    width: 75%;
-    height: 30%;
     background-color: white;
     margin-bottom: 25px;
     border-radius: 15px;
-
-
-
+    
 }
-
-
-
-
 
 td {
 
@@ -74,17 +48,20 @@ td {
     padding: 8px;
 
 
+}
+
+.emptyRow{
+
+width: 100%;
 
 }
+
 
 
 
 tr:hover{
 
-    box-shadow: 4px 4px 2px darkslategray;
-
-
-}
+    box-shadow: 4px 4px 2px darkslategray;}
 
 tr {
     display: inline-table;
@@ -94,12 +71,6 @@ tr {
     padding: 5px;
     margin-left: 15%;
     border-radius: 20px;
-
-
-
-
-
-
 }
 
 
@@ -108,10 +79,6 @@ tr {
 display: flex;
 flex-direction: column;
 align-items: center;
-
-
-
-
 }
 
 
@@ -121,26 +88,13 @@ align-items: center;
     align-items: center;
     padding: 0;
     width: 75%;
-    
-
-
 }
-
-
-
-
 
 main {
 
-
     display: flex;
     justify-content: right;
-
-
-
 }
-
-
 
 .nav_container {
 
@@ -183,12 +137,7 @@ nav i {
     color: black;
     height: 0;
     margin-left: 70%;
-
-
-
-
 }
-
 
 .search input {
 
@@ -198,12 +147,6 @@ nav i {
     height: 35px;
     margin-top: 20px;
     margin-bottom: 20px;
-    
-    
-
-
-
-
 }
 
 .arrow {
@@ -244,7 +187,7 @@ nav i {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 30%;
     z-index: 1;
 }
 
@@ -271,10 +214,6 @@ nav i {
 margin-left: 3px;
 
 }
-
-
-
-
 
 
 
@@ -418,10 +357,6 @@ box-shadow: 1px 1px;
     margin-bottom: 20px;
     margin-right: 18%;
     
-    
-
-
-
 
 }}
 
@@ -443,3 +378,4 @@ background-color: red;
 
 
 }
+
