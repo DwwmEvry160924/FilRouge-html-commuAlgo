@@ -25,7 +25,7 @@ form.addEventListener('submit', (event) => {
     if(projet.value.trim() === '') {
         projectE.textContent = "Entrer le nom de projet. 🐱‍💻"
 
-        let isValid = false;
+        isValid = false;
 
     }if (dateD.value === '') {
         dateDError.textContent = "Entrer une date de début. 👶"

@@ -48,26 +48,23 @@
         <div class="contain">
             <form class="formu">
                 <div class="Title">
-                    <label> Nom de la Tâche : </label>
-                    <input type="text" placeholder="Titre de la tâche">
+                    <label id="title-text"> Nom de la Tâche </label><i class="bi bi-pencil pen-container edit-icon"></i>
+                    <input type="text" class="title-input" style="display:none;">
+                    
+                    <div id="titreError"></div>
                 </div>
-
                 <div class="Title2">
                     <h4> Nom de la Liste</h4>
                 </div>
-
                 <div class="date">
                     <label for="date"> Date Limite : </label>
                     <input type="date" id="date" name="date">
+                    <div id="dateError"></div>
                 </div>
                 <div class="descri">
                     <label> Description de la tâche : </label>
-                    <textarea name="description" id="description" rows="12" > Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Rem, delectus. Molestias corporis totam facere maiores, deleniti quis sapiente saepe laborum quos at dolorem quod atque iusto nobis veritatis! 
-                        Numquam, iusto? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Rem, delectus. Molestias corporis totam facere maiores, deleniti quis sapiente saepe laborum quos at dolorem quod atque iusto nobis veritatis! 
-                        Numquam, iusto? 
-                    </textarea>
+                    <textarea name="description" id="description" rows="12" placeholder="Nulla vel velit tristique, pretium urna at,vestibulum felis. Duis fringilla purus eu nisl venenatis fermentum. Mauris at blandit libero. Donec eu aliquet risus.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sed lobortis nibh."></textarea>
+                    <div id="descriptionError"></div>
                 </div>
                 <div class="Pj">
                     <label for="Pj"> <strong>Ajouter des Piéces Jointes : </strong> <br>(format jpg, png, pdf / 8MO max)</label>
