@@ -1,6 +1,11 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 .background_img {
     position: absolute;
-    height: 100vh;
+    height: 900px;
     width: 100vw;
     z-index: -1;
     opacity: 0.8;
@@ -16,11 +21,6 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-}
-
-body {
-    padding: 0;
-    margin: 0;
 }
 
 #logo {
@@ -64,6 +64,7 @@ form label {
     margin: 5px;
     height: 30px;
     width: 40%;
+    margin-left: 15px ;
 }
 
 input {
@@ -73,18 +74,36 @@ input {
     border: 0;
     box-shadow: 4px 5px 2px darkslategray;
     min-height: 30px;
-    margin: 10px;
-    width: 100%;
+    margin: 20px;
+    width: 70%;
 }
 
 button {
+    display: flex;
+    justify-content: center;
     text-align: center;
+    align-items: center;
     background-color: #1D2F6F;
+    color: white;
     border: 0;
     border-radius: 20px;
     width: 30%;
+    height: 50px;
     margin-top: 20px;
-    margin-left: 40%
+    margin-left: 40%;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    color: red;
+    margin-left: 20px;
+    text-shadow: 8px 5px 8px black;
+}
+
+.errors{
+    background-color: #cfabab;
+    border: 1px solid red;
 }
 
 .contenu {
@@ -104,6 +123,11 @@ button {
     font-size: 12px;
 }
 
+#account{
+    display: flex;
+    justify-content: center;
+}
+
 form a {
     color: white;
     text-decoration: none;
@@ -119,6 +143,7 @@ a {
 #password,
 #cpassword {
     display: flex;
+    flex-direction: column;
     justify-content: left;
     align-items: center;
 }
@@ -135,7 +160,7 @@ i{
     }
 
     form input {
-
+        width: 80%;
         margin-top: 1%;
     }
 

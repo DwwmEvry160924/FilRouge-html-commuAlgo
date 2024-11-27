@@ -1,4 +1,7 @@
+
+
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -90,6 +93,11 @@ i {
     padding: 3%;
 }
 
+#S_delete:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
 .modifier-container {
     display: flex;
     justify-content: flex-end;
@@ -98,10 +106,67 @@ i {
     height: 35px;
 }
 
+#S_edit {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
 input {
     color: white;
     background-color: #1D2F6F;
 }
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+  
+
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Style des boutons dans la modale */
+  .modal-buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .modal-buttons button:hover {
+    background-color: #f0f0f0;
+  }
 
 @media screen and (max-width: 425px) {
 
@@ -115,11 +180,11 @@ input {
     }
 
     .background_img {
-        left: 25%;
-        top: 8%;
-        width: 60vw;
+        position: absolute;
+        height: 115vh;
+        width: 100vw;
         z-index: -1;
-        opacity: 0.5;
+        opacity: 0.8;
     }
     .utilisateur {
         width: 100%;

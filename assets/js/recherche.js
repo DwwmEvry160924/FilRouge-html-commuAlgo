@@ -1,11 +1,11 @@
 const tasks = [
 
-    {"id": 1,"task-name": "Task 1","status": "En cours","project-name": "Projet 1",},
-    {"id": 2,"task-name": "Task 2","status": "En cours","project-name": "Projet 1",},
-    {"id": 3,"task-name": "Task 1","status": "Terminé","project-name": "Projet 2",},
-    {"id": 4,"task-name": "Task 2","status": "Terminé","project-name": "Projet 2",},
-    {"id": 5,"task-name": "Task 3","status": "A Faire","project-name": "Projet 3",},
-    {"id": 6,"task-name": "Task 2","status": "A Faire","project-name": "Projet 3",},
+    { "id": 1, "task-name": "Task 1", "status": "En cours", "project-name": "Projet 1", "date": "27/11/2024"},
+    { "id": 2, "task-name": "Task 2", "status": "En cours", "project-name": "Projet 1", "date": "27/11/2023"},
+    { "id": 3, "task-name": "Task 1", "status": "Terminé", "project-name": "Projet 2", "date": "27/10/2022"},
+    { "id": 4, "task-name": "Task 2", "status": "Terminé", "project-name": "Projet 2", "date": "27/09/2023"},
+    { "id": 5, "task-name": "Task 3", "status": "A Faire", "project-name": "Projet 3", "date": "22/07/2024"},
+    { "id": 6, "task-name": "Task 2", "status": "A Faire", "project-name": "Projet 3", "date": "20/06/2024"},
 ]
 
 const inputFiltre = document.getElementById("maRecherche");
@@ -14,17 +14,25 @@ let tachefiltre = tasks
 
 const rows = document.getElementById("rows")
 
+function convertirDate(dateString) {
+    const [jour, mois, annee] = dateString.split('/'); // Sépare JJ, MM, AAAA
+    return new Date(`${annee}-${mois}-${jour}`); // Recompose en format ISO
+}
+
+
 inputFiltre.addEventListener("keyup", (e) => {
-filtre = e.target.value.toUpperCase();
+    filtre = e.target.value.toUpperCase();
     if (filtre) {
 
 
         tachefiltre = tasks.filter(task =>
             task["task-name"].toUpperCase().includes(filtre) || task["project-name"].toUpperCase().includes(filtre) || task["status"].toUpperCase().includes(filtre)
-        )}
+        )
+    }
 
     else {
-        tachefiltre = tasks;}
+        tachefiltre = tasks;
+    }
     console.log(tachefiltre)
     afficherTache()
 }
@@ -32,13 +40,13 @@ filtre = e.target.value.toUpperCase();
 
 function afficherTache() {
     rows.innerHTML = "";
-if (tachefiltre.length === 0) {
+    if (tachefiltre.length === 0) {
         const emptyRow = document.createElement("tr");
         const emptyCell = document.createElement("td");
         emptyCell.textContent = "Aucun résultat trouvé";
-       
+
         emptyRow.classList.add("emptyRow")
-        
+
         emptyRow.appendChild(emptyCell);
         rows.appendChild(emptyRow);
     } else {
@@ -68,24 +76,34 @@ if (tachefiltre.length === 0) {
     }
 }
 
-afficherTache ()
+const toggleCheckbox = document.getElementById("toggle-dropdown");
+const dropdownMenu = document.querySelector(".dropdown-menu")
+dropdownMenu.addEventListener("click", (event)=>{
 
-document.querySelector('.dropdown-menu li:nth-child(1)').addEventListener('click', () => {
-    filteredTasks.sort((a, b) => a["task-name"].localeCompare(b["task-name"]));
+    const filter = event.target.textContent.trim();
+
+    if (filter === "A-Z"){
+
+        tachefiltre.sort((a, b) => a["task-name"].localeCompare(b["task-name"]));
+    }
+
+    else if (filter === "Etat" ) {
+
+    const stateOrder = { "A Faire": 1, "En cours": 2, "Terminé": 3 };
+
+    tachefiltre.sort((a, b) => a["status"].localeCompare(b["status"]));
+
+
+    }
+
+    else if  (filter === "Date") {
+
+        tachefiltre.sort((a, b) => new Date(convertirDate(a["date"]))  - new Date(convertirDate(b["date"])));
+
+    }
+
+    
     afficherTache();
-});
+})
 
-
-document.querySelector('.dropdown-menu li:nth-child(2)').addEventListener('click', () => {
-    const statusFilter = prompt("Entrez un statut (A Faire, En cours, Terminé) :");
-    filteredTasks = tasks.filter(task => task.status.toUpperCase() === statusFilter.toUpperCase());
-    afficherTache();
-});
-
-
-document.querySelector('.dropdown-menu li:nth-child(3)').addEventListener('click', () => {
-    filteredTasks.sort((a, b) => new Date(a["date"]) - new Date(b["date"]));
-    afficherTache();
-});
-
-
+afficherTache();
