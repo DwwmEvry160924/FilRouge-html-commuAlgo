@@ -36,41 +36,8 @@ annul.addEventListener('click', function (e) {
     modal.style.display = "none";
 })
 
-// Modal Modifications Infos compte
 
-let modal2 = document.getElementById("modal2");
-let btn2 = document.getElementById("Account");
-let span2 = document.getElementsByClassName("close2")[0];
-let valid = document.getElementById("valid")
-let cancel = document.getElementById("annule")
-
-btn2.addEventListener('click', function (e) {
-    e.preventDefault();
-    modal2.style.display = "block";
-})
-
-span2.addEventListener("click", function (e) {
-    e.preventDefault();
-    modal2.style.display = "none";
-})
-
-window.addEventListener('click', function (e) {
-    e.preventDefault();
-    if (e.target == modal2) {
-        modal2.style.display = "none";
-    }
-})
-
-valid.addEventListener('click', function (e) {
-    e.preventDefault();
-    modal2.style.display = "none";
-})
-
-cancel.addEventListener('click', function (e) {
-    e.preventDefault();
-    modal2.style.display = "none";
-})
-
+//  Evenement sur le click du bouton validé et pas de vérification encore en place pour le mot de passe actuel
 
 
 
@@ -84,8 +51,7 @@ form.addEventListener('click', (event) => {
     const vPasswordField = document.getElementById("v_npassword");
     const passwordV = vPasswordField.value.trim();
     const lPasswordField = document.getElementById("lpassword");
-    const lpassword = ("Kevinestnul");
-    // const lpassword = lPasswordField.value.trim();
+    const lpassword = lPasswordField.value.trim();
 
     let hasError = false;
 
@@ -175,81 +141,184 @@ form.addEventListener('click', (event) => {
     }
 });
 
-// const form = document.querySelector('form');
-// const nameField = document.getElementById("Nom");
-// const fnField = document.getElementById("Prenom");
-// const addField = document.getElementById("Adresse");
-// const emailField = document.getElementById('email');
-// const birthField = document.getElementById("Naissance");
-// const telField = document.getElementById("Tel");
 
 
-// function validateEmail(email) {
-//     const emailField = (/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
-//     return emailField.test(email);
-// }
+// // Modal Modifications Infos compte
 
-// // function valideName(){
-// //     const nameField = -;
-// //     return nameField.test
-// // }
+let modal2 = document.getElementById("modal2");
+let btn2 = document.getElementById("Account");
+let span2 = document.getElementsByClassName("close2")[0];
+let valid = document.getElementById("valid")
+let cancel = document.getElementById("annule")
 
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault();
+btn2.addEventListener('click', function (e) {
+    e.preventDefault();
+    modal2.style.display = "block";
+})
 
-//     const existingErrors = document.querySelectorAll(".error");
-//     existingErrors.forEach(error => error.remove());
+span2.addEventListener("click", function (e) {
+    e.preventDefault();
+    modal2.style.display = "none";
+})
 
+window.addEventListener('click', function (e) {
+    e.preventDefault();
+    if (e.target == modal2) {
+        modal2.style.display = "none";
+    }
+})
 
-//     const email = emailField.value.trim();
+valid.addEventListener('click', function (e) {
+    e.preventDefault();
+    if(hasError){
+        modal2.style.display = "block";
+    }
+    modal2.style.display = "none";
+})
 
-//     let hasError = false;
+cancel.addEventListener('click', function (e) {
+    e.preventDefault();
+    modal2.style.display = "none";
+})
 
-//     if (!email) {
-//         hasError = true;
-//         const div = document.getElementById("email");
-//         const pError = document.createElement("p");
-//         const input = document.getElementById("email")
-//         pError.classList.add("error");
-//         input.classList.add("errors");
-//         pError.textContent = " ! Veuillez saisir une adresse mail valide.";
-//         div.appendChild(pError);
-//     } else if (!validateEmail(email)){
-//         hasError = true;
-//         const div = document.getElementById("email");
-//         const pError = document.createElement("p");
-//         const input = document.getElementById("email")
-//         pError.classList.add("error");
-//         input.classList.add("errors");
-//         pError.textContent = " ! Veuillez saisir une adresse mail valide.";
-//         div.appendChild(pError);
-//     }
+// Evement sur le formulaire de modification des informations du compte
 
-//     if (!hasError){
-//         alert("Connexion réussie !");
-//         window.location.href = "../pages/dashboardV2.html";
-//     }
+const form2 = document.querySelector('#valid');
 
+function validateEmail(email) {
+    const emailField = (/^[^\s@]+@[^\s@]+\.[^\s@]+$/);
+    return emailField.test(email);
+}
 
-//     if (!password){
-//         hasError = true;
-//         const div = document.getElementById("colonne1");
-//         const pError = document.createElement("p");
-//         const input = document.getElementById("npassword")
-//         const input2 = document.getElementById("v_password")
-//         pError.classList.add("error");
-//         input.classList.add("errors");
-//         input2.classList.add("errors");
-//         pError.textContent = " ! Veuillez entrer un mot de passe."
-//         div.appendChild(pError)
-//     }else if (password.length < 8 || password.length > 16) {
-//         hasError = true;
-//         const div = document.getElementById("password");
-//         const pError = document.createElement("p");
-//         const input = document.getElementById("password1")
-//         pError.classList.add("error");
-//         input.classList.add("errors");
-//         pError.textContent = " ! Le mot de passe doit contenir entre 8 et 16 caractères.";
-//         div.appendChild(pError)
-//     }
-// });
+form2.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const nameField = document.getElementById('Nom');
+    const name = nameField.value.trim();
+
+    const fnField = document.getElementById('Prenom');
+    const prenom = fnField.value.trim() ;
+
+    const addField = document.getElementById('Adresse');
+    const addresse = addField.value.trim() ;
+
+    const emailField = document.getElementById('email');
+    const email = emailField.value.trim() ;
+
+    const birthField = document.getElementById('Naissance');
+    const naissance = birthField.value.trim() ;
+
+    const telField = document.getElementById('Tel');
+    const tel = telField.value.trim() ;  
+
+    const existingErrors = document.querySelectorAll(".error");
+    existingErrors.forEach(error => error.remove());
+
+    let hasError = false;
+
+    if (!name) {
+        hasError = true;
+        const div = document.getElementById("nom");
+        if(div){
+            const pError = document.createElement("p");
+            const input = document.getElementById("Nom");
+            pError.classList.add("error");
+            input.classList.add("errors");
+            pError.textContent = " ! Veuillez saisir un Nom valide";
+            div.appendChild(pError);
+        }
+    }
+
+    if (!prenom) {
+        hasError = true;
+        const div = document.getElementById("prenom");
+        if(div){
+            const pError = document.createElement("p");
+            const input = document.getElementById("Prenom");
+            pError.classList.add("error");
+            input.classList.add("errors");
+            pError.textContent = " ! Veuillez saisir un Prenom valide";
+            div.appendChild(pError);
+        }
+    }
+
+    if (!addresse) {
+        hasError = true;
+        const div = document.getElementById("addresse");
+        if(div){
+            const pError = document.createElement("p");
+            const input = document.getElementById("Adresse");
+            pError.classList.add("error");
+            input.classList.add("errors");
+            pError.textContent = " ! Veuillez saisir une Addresse valide";
+            div.appendChild(pError);
+        }
+    }
+
+    if (!email) {
+        hasError = true;
+        const div = document.getElementById("email");
+        if(div){
+            const pError = document.createElement("p");
+            const input = document.getElementById("email");
+            pError.classList.add("error");
+            input.classList.add("errors");
+            pError.textContent = " ! Veuillez saisir une adresse mail valide.";
+            div.appendChild(pError);
+        }
+    } else if (!validateEmail(email)){
+        hasError = true;
+        const div = document.getElementById("email");
+        if(div){
+            const pError = document.createElement("p");
+            const input = document.getElementById("email");
+            pError.classList.add("error");
+            input.classList.add("errors");
+            pError.textContent = " ! Veuillez saisir une adresse mail valide.";
+            div.appendChild(pError);
+        }
+    }
+
+    if (!naissance) {
+        hasError = true;
+        const div = document.getElementById("naissance");
+        if(div){
+            const pError = document.createElement("p");
+            const input = document.getElementById("Naissance");
+            pError.classList.add("error");
+            input.classList.add("errors");
+            pError.textContent = " ! Veuillez saisir une date de naissance valide";
+            div.appendChild(pError);
+        }
+    }
+
+    if (!tel) {
+        hasError = true;
+        const div = document.getElementById("tel");
+        if(div){
+            const pError = document.createElement("p");
+            const input = document.getElementById("Tel");
+            pError.classList.add("error");
+            input.classList.add("errors");
+            pError.textContent = " ! Veuillez saisir une numéro de téléphone valide";
+            div.appendChild(pError);
+        }
+    } else if (tel.length !== 10) {
+        hasError = true;
+        const div = document.getElementById("tel");
+        if(div){
+            const pError = document.createElement("p");
+            const input = document.getElementById("Tel");
+            pError.classList.add("error");
+            input.classList.add("errors");
+            pError.textContent = " ! Veuillez saisir un numéro de téléphone valide";
+            div.appendChild(pError);
+        }
+    }
+
+    if (!hasError) {
+        alert("Informations modifiées avec succès !");
+        window.location.href = "../pages/Profile.html";
+    }
+});
+
