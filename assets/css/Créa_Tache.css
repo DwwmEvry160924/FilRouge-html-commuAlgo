@@ -132,12 +132,13 @@ nav img{
 
 .date{
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
 }
 
 .date input{
     margin-left: 10px;
-    width: 177px;
+    width: 20vw;
 }
 
 .descri{
@@ -149,7 +150,7 @@ nav img{
 .descri label{
     display: flex;
     justify-content: flex-start;
-    margin: 10px 140px;
+    margin: 10px 160px;
 }
 
 .descri textarea{
@@ -188,6 +189,15 @@ nav img{
 }
 
 
+#titreError, #dateError, #descriptionError{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: red;
+    align-items: center;
+    margin-top: 10px;
+}
+
 
 @media screen and (max-width:425px) {
     
@@ -217,19 +227,25 @@ nav img{
     .Title{
         flex-direction: column;
         margin-top: 10px;
-        margin-left: 10px;
+        margin-left: 70px;
         width: 80%;
         padding: 0;
+    }
+
+    .Title input{
+        width: 60vw;
     }
 
     .date{
         flex-direction: column;
         margin-top: 10px;
         margin-left: 10px;
+        align-items: center;
     }
 
     .date input{
         margin-left: 0;
+        width: 60vw;
     }
 
     .descri label{
@@ -257,6 +273,17 @@ nav img{
         width: 70%;
         padding: 4%;
     }
+
+    #titreError, #dateError, #descriptionError{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        color: red;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
 }
 
 
