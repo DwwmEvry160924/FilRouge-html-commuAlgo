@@ -54,24 +54,35 @@
                 <div class="taskList">
                     <div id="projet">
                         <form action="" method="post">
-                        <label for="text"> Projet : </label>
-                        <input type="text" placeholder="Nom projet" name="Projet" size="30" required>
+                            <label for="text"> Projet : </label>
+                            <input id="project" type="text" placeholder="Nom projet" name="Projet" size="30">
+                            <div id="projectError"></div>
                     </div>
                     <div id="date">
                         <label for="date">date de début :</label>
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="dateDebut" name="date">
+                        <div id="dateDebutError"></div>
                         <label for="date">date de fin :</label>
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="dateFin" name="date">
+                        <div id="dateFinError"></div>
                     </div>
-                        <div class="description">
-                            <label for="Message">Description du projet :</label>
-                            <textarea id="message" name"messaage" placeholder="descriptif du projett">
+                    <div class="description">
+                        <label for="Message">Description du projet :</label>
+                        <textarea id="message" name"messaage" placeholder="descriptif du projett">
                         </textarea>
-                        </div>
-                        <div class="confirmer-container">
-                            <button type="submit" value="Valider"> Enregistrer le projet </button>
-                        </div>
+                        <div id="descriptionError"></div>
+                    </div>
+                    <div class="confirmer-container">
+                        <button type="submit" value="Valider" id="bouton"> Enregistrer le projet </button>
+                    </div>
+                    <div id="valide"></div>
                     </form>
                 </div>
             </article>
         </section>
+
+    </main>
+
+
+    <script src="../assets/js/Creation_projet.js"></script>
+</body>

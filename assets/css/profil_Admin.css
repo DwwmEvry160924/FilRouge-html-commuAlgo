@@ -167,6 +167,15 @@ input {
   .modal-buttons button:hover {
     background-color: #f0f0f0;
   }
+.message-container,
+.message {
+  color: red;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 425px) {
 
