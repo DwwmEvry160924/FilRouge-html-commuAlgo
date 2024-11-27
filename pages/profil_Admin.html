@@ -116,6 +116,50 @@
                 <h2>Êtes-vous sûr de vouloir supprimer votre compte ?</h2>
                 <p>Cette action est irréversible.</p>
                 <div class="modal-buttons">
+                    <button id="confirm_delete">Confirmer</button>
+                    <button id="cancel_delete">Annuler</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_edit" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Modifier votre compte</h2>
+                <p>Voici le formulaire pour modifier vos informations :</p>
+                <form>
+                    <label for="new_name">Nom :</label>
+                    <input type="text" id="new_name" name="new_name" placeholder="Entrez un nom"><br>
+                    <br>
+                    <label for="new_firstName">Prenom :</label>
+                    <input type="text" id="new_firstName" name="new_firstName" placeholder="Entrez un prénom"><br>
+                    <br>
+                    <label for="new_adress">Adresse :</label>
+                    <input type="text" id="new_adress" name="new_adress" placeholder="Entrez une adresse"><br>
+                    <br>
+                    <label for="new_email">Adresse Mail :</label>
+                    <input type="email" id="new_email" name="new_email" placeholder="Entrez un nouvel email"><br>
+                    <br>
+                    <label for="new_birth">Date de Naissance :</label>
+                    <input type="number" id="new_birth" name="new_birth" placeholder="Entrez votre date de naissance"><br>
+                    <br>
+                    <label for="new_number">Numéro de téléphone :</label>
+                    <input type="number" id="new_number" name="new_number" placeholder="Entrez votre numéro de téléphone"><br>
+                    <br>
+                </form>
+                <div class="modal-buttons">
+                    <button id="confirm_edit">Confirmer les modifications</button>
+                    <button id="cancel_edit">Annuler</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal_delete" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Êtes-vous sûr de vouloir supprimer votre compte ?</h2>
+                <p>Cette action est irréversible.</p>
+                <div class="modal-buttons">
                     <div class="message-container"></div>
                     <button id="confirm_delete">Confirmer</button>
                     <button id="cancel_delete">Annuler</button>
