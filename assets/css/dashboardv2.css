@@ -37,7 +37,29 @@
     text-decoration: none;
     cursor: pointer;
   }
+  
+.confirmBtn {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 
+.confirmBtn:hover, .confirmBtn:active {
+    background-color: red;
+  }
+
+.cancelBtn {
+    background-color: #030100;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
 
 /* Partie html-css */
 
@@ -103,6 +125,8 @@ nav img{
     padding: 5px;
     color: azure;
     background-color: #1D2F6F;
+
+    cursor: pointer;
 }
 
 .tache_container{
@@ -160,6 +184,8 @@ nav img{
     padding: 5px;
     color: azure;
     background-color: #1D2F6F;
+
+    cursor: pointer;
 }
 
 .projet{
@@ -201,6 +227,8 @@ nav img{
     padding: 5px;
     color: azure;
     background-color: #1D2F6F;
+
+    cursor: pointer;
 }
 
 .even{
@@ -277,7 +305,7 @@ nav img{
     align-items: center;
 }
 
-a{
+.adminBtn{
     text-decoration: none;
     color: azure;
 }

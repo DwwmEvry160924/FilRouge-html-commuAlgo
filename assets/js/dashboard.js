@@ -16,22 +16,32 @@ dc.addEventListener( "click", function(e) {
 })
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() { // Utilisez addEventListener plutot que directement onclick car onclick s affichera dans notre html
+span.addEventListener( "click", function() { // Utilisez addEventListener plutot que directement onclick car onclick s affichera dans notre html
     modal.style.display = "none";
-}
+})
 
 // When the user clicks anywhere outside of the modal, close it
 
-window.onclick = function(event) {
+window.addEventListener( "click", function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
-  }
+  })
 
+let modalContent = document.querySelector(".modal-content"); // j'avais oublié le document. avant le querySelector (bien faire attention à ca)
+let cancelBtn = document.querySelector(".cancelBtn");
+
+modalContent.addEventListener("click", function(e) {
+  if (e.target == cancelBtn) {
+    modal.style.display = "none";
+  }
+})
+
+/* J'avais créer des boutons dans la modal 
 
 let btnConfirm = querySelector(".btnConfirm");
 let btnCancel = querySelector(".btnCancel");
-/*
+
 window.onclick = function(event) {
     if (event.target == btnCancel) {
       modal.style.display = "none";
