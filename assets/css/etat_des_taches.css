@@ -1,3 +1,78 @@
+/* Partie modal (fait pendant le JS) */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.confirmBtn {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.confirmBtn:hover, .confirmBtn:active {
+    background-color: red;
+  }
+
+.cancelBtn {
+    background-color: #030100;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/* PARTIE BODY */
+
+.background_img {
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.8;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -30,9 +105,6 @@ h4 {
 
     margin-bottom: 60px;
     text-align: center;
-
-
-
 }
 
 .container {
@@ -50,23 +122,14 @@ h4 {
 
 
 .col:hover{
-
     box-shadow: 4px 4px 2px darkslategray;
-
-
 }
 
 .col1:hover{
-
     box-shadow: 4px 4px 2px darkslategray;
-
-
 }
 
-
-
 .col {
-
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -80,11 +143,9 @@ h4 {
     
 
     color: white;
-
 }
 
 .col1 {
-
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
@@ -102,17 +163,12 @@ background-image: linear-gradient(160deg, #0095e9 0%, #809ad0 100%);
 }
 
 
-
-
-
-
 p {
     display: flex;
     font-size: 14px;
     padding: 0;
     margin: 10px;
 }
-
 
 main {
     display: flex;
@@ -121,43 +177,32 @@ main {
     gap: 20px;
 }
 
-
 p {
     padding: 0;
 }
 
-.nav_container {
+/* NAVBAR */
 
-    border: black solid 1px;
-    background-color: rgba(63, 136, 197, 1);
-    height: 60px;
-
+body{
+    padding: 0;
+    margin: 0;
 }
 
-nav {
+header{
+    background-color: rgba(63, 136, 197, 1);
+    margin-bottom: 10px;
+    min-width: 100vw;
+}
+
+nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 4px;
 }
 
-.nav_container img {
-    width: 86px;
-    height: 86px;
-}
-
-nav i {
-    color: #1D2F6F;
-}
-
-.nav_container {
-    font-size: 30px;
-}
-
-.nav_container img {
-    width: 50px;
-    height: 50px;
+nav img{
+    width: 40px;
+    height: 40px;
 }
 
 

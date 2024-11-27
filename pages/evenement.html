@@ -9,26 +9,45 @@
 </head>
 
 <body>
+    <div class="background">
+        <img src="../assets/image/background__image.jpg" class="background_img">
+    </div>
+
     <header>
         <nav>
             <a href="../pages/Profile.html">
                 <i class="bi bi-person-circle" style="color: rgba(29, 47, 111, 1)"></i>
             </a>
+
             <a href="../pages/dashboardv2.html">
-                <img src="../assets/image/logo-removebg-preview.png" alt="logo du site">
+                <img src="../assets/image/logo_bg.png" alt="logo du site">
             </a>
+
             <a href="../pages/chat.html">
                 <i class="bi bi-chat-left-fill" style="color: rgba(29, 47, 111, 1)"></i>
             </a>
-            <a href="../pages/Projet.html">
+
+            <a href="../pages/etat_des_taches.html">
                 <i class="bi bi-list-check" style="color: rgba(29, 47, 111, 1)"></i>
             </a>
+
             <a href="../pages/notif.html">
                 <i class="bi bi-bell" style="color: rgba(29, 47, 111, 1)"></i>
             </a>
-            <a href="../pages/Connexion.html">
+
+            <a id="dcIcone" href="../pages/Connexion.html"> <!-- j'avais mis id="dcIcone" dans le <i> -->
                 <i class="bi bi-box-arrow-right" style="color: rgba(29, 47, 111, 1)"></i>
+
             </a>
+
+            <div id="dcModal" class="modal"> <!-- j avais mis cette div dans le <a> => je l'ai donc sorti du <a> avec raccourci alt+fleche du bas -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Êtes-vous sûr de vouloir vous déconnecter ?</p>
+                    <a class="confirmBtn" href="../pages/Connexion.html" target="_self">Confirmer</a> <!-- target="_blank" Opens the linked document in a new window or tab, target="_self" Opens the linked document in the same frame as it was clicked (this is default)-->
+                    <button class="cancelBtn">Annuler</button>
+                </div>
+            </div>
         </nav>
     </header>
 
